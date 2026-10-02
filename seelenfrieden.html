@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Seelenfrieden · Die Welt in dir · Das Seelenfrieden-Tagebuch | Michaela Schäfer</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='88'%3E🌅%3C/text%3E%3C/svg%3E">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#3c251b">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta property="og:type" content="website"><meta property="og:locale" content="de_DE"><meta property="og:title" content="Seelenfrieden · Die Welt in dir"><meta property="og:description" content="Das Seelenfrieden-Tagebuch von Michaela Schäfer – 21 Tage Impulse, Wissen über Gefühle und ein persönliches Tagebuch-Buch.">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Seelenfrieden","description":"Das Seelenfrieden-Tagebuch: Die Welt in dir","inLanguage":"de","author":{"@type":"Person","name":"Michaela Schäfer"}}</script>
+<meta name="referrer" content="no-referrer">
+
+  <style>
+    :root {
+      --cream: #f8f2eb;
+      --paper: #fffaf4;
+      --brown: #3c251b;
+      --light-brown: #8c6250;
+      --rose: #d9a99a;
+      --line: rgba(60, 37, 27, .18);
+      --shadow: 0 18px 45px rgba(35, 19, 10, .24);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--brown);
+      background: var(--cream);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+      cursor: pointer;
+    }
+
+    header {
+      position: fixed;
+      z-index: 20;
+      top: 0;
+      width: 100%;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 6%;
+      background: rgba(255, 250, 244, .98);
+      border-bottom: 1px solid rgba(60, 37, 27, .12);
+    }
+
+    .logo {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 19px;
+      font-weight: 600;
+    }
+
+    nav {
+      display: flex;
+      gap: 28px;
+      font-size: 12px;
+      color: #654b3c;
+    }
+
+    nav a:hover {
+      color: var(--rose);
+    }
+
+    .nav-button {
+      border: 0;
+      border-radius: 20px;
+      padding: 9px 20px;
+      color: white;
+      background: #b6816f;
+      font-size: 11px;
+      transition: background 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background: #9e6d5c;
+    }
+
+    .hero {
+      min-height: 680px;
+      padding: 130px 8% 80px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(50, 25, 13, .86), rgba(50, 25, 13, .34)),
+        url("walnuss-hintergrund.jpg") center / cover;
+    }
+
+    .hero-content {
+      width: 48%;
+      max-width: 590px;
+      z-index: 2;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      color: #e3b9a7;
+    }
+
+    h1 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(52px, 6.5vw, 86px);
+      line-height: .92;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .author-sub {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 22px;
+      color: #f7e8dc;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .hero-text {
+      max-width: 350px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #f7e8dc;
+      margin-bottom: 30px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .primary,
+    .secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+      padding: 13px 24px;
+      font-size: 12px;
+      transition: .3s ease;
+    }
+
+    .primary {
+      color: white;
+      background: #c28d78;
+      border: 1px solid #c28d78;
+    }
+
+    .secondary {
+      color: white;
+      border: 1px solid rgba(255,255,255,.7);
+    }
+
+    .primary:hover,
+    .secondary:hover {
+      transform: translateY(-3px);
+    }
+
+    .book {
+      position: absolute;
+      right: 14%;
+      bottom: 54px;
+      width: min(330px, 34vw);
+      filter: drop-shadow(18px 25px 20px rgba(0,0,0,.4));
+      transform: rotate(-1deg);
+      transition: .5s ease;
+    }
+
+    .book:hover {
+      transform: rotate(0deg) translateY(-8px);
+    }
+
+    .hero-details {
+      position: absolute;
+      bottom: 32px;
+      left: 8%;
+      display: flex;
+      gap: 30px;
+      font-size: 11px;
+      color: #efddd1;
+    }
+
+    .music {
+      position: fixed;
+      z-index: 30;
+      right: 22px;
+      bottom: 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 15px;
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 30px;
+      color: white;
+      background: rgba(60, 37, 27, .87);
+      box-shadow: var(--shadow);
+      font-size: 12px;
+    }
+
+    .music button {
+      width: 30px;
+      height: 30px;
+      border: 0;
+      border-radius: 50%;
+      color: white;
+      background: var(--rose);
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 34px 8%;
+      background: var(--cream);
+    }
+
+    .benefit {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 0 28px;
+      border-right: 1px solid var(--line);
+    }
+
+    .benefit:first-child {
+      padding-left: 0;
+    }
+
+    .benefit:last-child {
+      border: 0;
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      flex: 0 0 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #8b5d4d;
+      background: #f0ddd3;
+      font-size: 21px;
+    }
+
+    .benefit h3 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .benefit p {
+      font-size: 11px;
+      color: #765a4a;
+      line-height: 1.5;
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .section-title {
+      max-width: 620px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section-title span {
+      color: var(--light-brown);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .section-title h2 {
+      margin: 12px 0 18px;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(42px, 5vw, 64px);
+      line-height: 1;
+      font-weight: 500;
+    }
+
+    .section-title p {
+      color: #765a4a;
+    }
+
+    /* INTERAKTIVER TAGEBUCH-BEREICH */
+    .journal-container {
+      max-width: 780px;
+      margin: 40px auto 0;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 45px;
+      box-shadow: var(--shadow);
+    }
+
+    .journal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 15px;
+    }
+
+    .journal-container h3 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 32px;
+      color: var(--brown);
+    }
+
+    #tag-anzeige {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--light-brown);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .tag-impuls {
+      font-style: italic;
+      color: var(--light-brown);
+      font-size: 17px;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .journal-task {
+      font-size: 15px;
+      color: var(--brown);
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    textarea#antwort-feld {
+      width: 100%;
+      min-height: 150px;
+      padding: 18px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: white;
+      color: var(--brown);
+      font-family: inherit;
+      font-size: 15px;
+      line-height: 1.6;
+      resize: vertical;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    textarea#antwort-feld:focus {
+      border-color: var(--rose);
+    }
+
+    .day-navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .journal-btn {
+      background: #c28d78;
+      color: white;
+      border: 0;
+      border-radius: 30px;
+      padding: 12px 26px;
+      font-size: 12px;
+      transition: .3s ease;
+      cursor: pointer;
+    }
+
+    .journal-btn:hover {
+      background: #a97561;
+      transform: translateY(-2px);
+    }
+
+    .journal-btn-secondary {
+      background: transparent;
+      color: var(--light-brown);
+      border: 1px solid var(--line);
+    }
+
+    .journal-btn-secondary:hover {
+      background: rgba(60, 37, 27, 0.05);
+      color: var(--brown);
+    }
+
+    .analysis-box {
+      background: #f4eae1;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--rose);
+      padding: 30px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .analysis-box h3 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 26px;
+      margin-bottom: 12px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      max-width: 1050px;
+      margin: 55px auto 0;
+    }
+
+    .step {
+      min-height: 215px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,.48);
+    }
+
+    .step-number {
+      color: var(--rose);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 34px;
+    }
+
+    .step h3 {
+      margin: 13px 0 8px;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 27px;
+    }
+
+    .step p {
+      color: #765a4a;
+      font-size: 14px;
+    }
+
+    .quote {
+      padding: 105px 8%;
+      text-align: center;
+      color: white;
+      background:
+        linear-gradient(rgba(56, 31, 18, .86), rgba(56, 31, 18, .86)),
+        url("walnuss-hintergrund.jpg") center / cover;
+    }
+
+    .quote p {
+      max-width: 760px;
+      margin: auto;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(32px, 5vw, 58px);
+      line-height: 1.05;
+    }
+
+    .quote small {
+      display: block;
+      margin-top: 24px;
+      color: #e5bbaa;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+
+    .newsletter {
+      max-width: 730px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .newsletter form {
+      display: flex;
+      max-width: 520px;
+      margin: 28px auto 0;
+      gap: 8px;
+    }
+
+    .newsletter input {
+      width: 100%;
+      padding: 15px 18px;
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      outline: none;
+      background: white;
+    }
+
+    .newsletter button {
+      border: 0;
+      border-radius: 30px;
+      padding: 0 23px;
+      color: white;
+      background: #b6816f;
+    }
+
+    footer {
+      padding: 28px 8%;
+      display: flex;
+      justify-content: space-between;
+      color: #806858;
+      background: #eee2d7;
+      font-size: 12px;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        padding: 0 5%;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        min-height: 780px;
+        padding: 125px 8% 260px;
+        align-items: flex-start;
+      }
+
+      .hero-content {
+        width: 100%;
+      }
+
+      .book {
+        right: 17%;
+        bottom: 70px;
+        width: 58vw;
+      }
+
+      .hero-details {
+        left: 8%;
+        bottom: 25px;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .benefits,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .benefit,
+      .benefit:first-child {
+        padding: 20px 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .newsletter form {
+        flex-direction: column;
+      }
+
+      .newsletter button {
+        padding: 14px;
+      }
+
+      footer {
+        gap: 10px;
+        flex-direction: column;
+      }
+    }
+  :root{--accent:#c28d78;--rose2:#a97561;--blush:#d9a99a;--card:var(--paper);--ink:var(--brown);--mut:var(--light-brown);--soft:#f0ddd3;--sh:var(--shadow);--bg:var(--cream)}
+#hearts{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:3}
+header{padding-top:env(safe-area-inset-top,0px);height:calc(58px + env(safe-area-inset-top,0px))}
+.nav-button{cursor:pointer}
+.book{aspect-ratio:3/4;border-radius:6px 16px 16px 6px;background:linear-gradient(135deg,#e3b9a7,#c28d78 55%,#8c6250);color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:24px;font-family:"Cormorant Garamond",Georgia,serif;border-left:10px solid rgba(60,37,27,.35)}
+.book b{font-size:clamp(34px,5vw,54px);line-height:.95;font-weight:600}.book i{font-size:18px;margin-top:10px}.book small{margin-top:20px;letter-spacing:3px;font-size:11px;text-transform:uppercase;opacity:.9}
+.hero,.quote{background-color:#4a2e20}
+footer{flex-wrap:wrap;align-items:center;justify-content:center;text-align:center;gap:6px 16px}
+footer button{background:none;border:0;text-decoration:underline;font-size:12px;color:#806858;margin:0 6px}
+.card{border-left:5px solid var(--accent)}
+section .card{max-width:640px;margin:20px auto 0}
+.journal{margin-top:40px}
+.btn{font-size:13px}
+.hero-details{z-index:2}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:30px;padding:11px 22px;font-size:14px;transition:.25s}
+.btn:hover{background:var(--rose2);transform:translateY(-2px)}
+.btn.o{background:transparent;color:var(--ink);border-color:var(--line)}.hero .btn.o{color:#fff;border-color:rgba(255,255,255,.7)}.hero .btn.o:hover{background:rgba(255,255,255,.12)}
+.btn.o:hover{border-color:var(--accent);background:var(--soft)}
+.acts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.card{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:20px;padding:22px 26px;margin-bottom:16px;box-shadow:var(--sh)}
+.prog{position:sticky;top:calc(62px + env(safe-area-inset-top,0px));z-index:5;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px 16px;margin-bottom:16px;font-size:13px}
+.bar{height:8px;background:var(--soft);border-radius:9px;margin-top:6px;overflow:hidden}.bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .5s}
+.day.lock{opacity:.55}.day.done{border-left-color:#5b7065}
+.dh{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;background:none;border:0;text-align:left}
+.dh small{display:block;color:var(--mut);font-size:12px}.dh h3{font-size:1.5rem}
+.db{display:none;margin-top:14px}.day.open .db{display:block}
+.db p{margin-bottom:12px}.lbl{font-weight:600;color:var(--rose2);font-size:13px;letter-spacing:.5px;text-transform:uppercase}
+.mini{background:var(--soft);border-radius:14px;padding:12px 16px;font-size:.92rem;margin-bottom:12px}
+textarea,input[type=text]{width:100%;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:14px;padding:12px;font:inherit}
+textarea{min-height:110px;resize:vertical;margin-bottom:10px}
+.ov{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(30,15,8,.6)}
+.ov.on{display:flex}
+.box{background:var(--card);border-radius:22px;width:min(760px,100%);max-height:88vh;display:flex;flex-direction:column;box-shadow:var(--sh);position:relative}
+.box>h2{font-size:1.9rem;padding:22px 26px 6px}
+.x{position:absolute;right:14px;top:10px;border:0;background:none;font-size:28px;line-height:1}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding:8px 22px;border-bottom:1px solid var(--line)}
+.tabs button{white-space:nowrap;border:1px solid var(--line);background:none;border-radius:20px;padding:7px 14px;font-size:13px}
+.tabs button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.body{overflow-y:auto;padding:18px 26px 26px}
+.pane{display:none}.pane.on{display:block}.pane h3{font-size:1.6rem;margin:4px 0 10px}.pane p,.pane li{margin-bottom:10px;font-size:.95rem}.pane ul{padding-left:20px}
+.hint{background:var(--soft);border-radius:12px;padding:10px 14px;font-size:.85rem;color:var(--mut)}
+.pay{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+#cc{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:60;max-width:680px;margin:auto;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 20px;box-shadow:0 10px 50px rgba(0,0,0,.35);display:none;font-size:.9rem}
+#cc.on{display:block}#cc label{display:block;margin:6px 0;font-size:.88rem}#cc .acts{justify-content:flex-start;margin-top:12px}
+#cc .btn{padding:9px 16px;font-size:13px}
+#fin{text-align:center}#fin .box{padding:40px 26px}#fin h2{font-size:3rem;padding:0;color:var(--accent)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.journal{max-width:780px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:40px;box-shadow:var(--sh)}
+.jh{display:flex;justify-content:space-between;align-items:center;gap:10px;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:22px;flex-wrap:wrap}
+.jh .ph{font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--mut)}
+.journal h3{font-size:clamp(1.9rem,5vw,2.4rem);margin-bottom:14px}
+.imp{font-style:italic;color:var(--mut);font-size:1.1rem;line-height:1.6;margin-bottom:18px}
+.blk{border-radius:14px;padding:16px 20px;margin-bottom:16px;font-size:.95rem}
+.blk .lbl{display:block;margin-bottom:4px}
+.b-love{background:linear-gradient(135deg,#f4e3da,#f0ddd3);border-left:4px solid var(--blush)}
+.b-know{background:#f4eae1;border-left:4px solid var(--accent)}
+.b-task{background:var(--card);border:1px solid var(--line);font-weight:500}
+.b-soft{background:#eef2ee;border-left:4px solid #5b7065}
+.b-aff{text-align:center;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.6rem;font-style:italic;color:var(--rose2);border:1px dashed var(--blush)}
+.nav2{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:24px}
+.dots{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:20px 0 0}
+.dots button{width:26px;height:26px;border-radius:50%;border:1px solid var(--line);background:none;font-size:11px;padding:0}
+.dots button.on{background:var(--accent);color:#fff;border-color:var(--accent)}.dots button.dn{background:var(--soft);border-color:var(--blush)}
+@media(max-width:600px){.journal{padding:24px 18px}}
+
+section:not(.hero){content-visibility:auto;contain-intrinsic-size:auto 640px}
+.btn{background:linear-gradient(135deg,#d3a08b,#b6816f);border:0;letter-spacing:.06em;box-shadow:0 6px 18px rgba(150,95,72,.28),inset 0 1px 0 rgba(255,255,255,.35);padding:13px 28px}
+.btn:hover{background:linear-gradient(135deg,#c8917b,#a97561)}
+.btn.o{background:transparent;box-shadow:none;border:1px solid rgba(194,141,120,.55);color:var(--brown)}
+.btn.o:hover{background:#f6e9e1}.btn:disabled{opacity:.35;pointer-events:none}
+.hero .btn.o{color:#fff;border-color:rgba(255,255,255,.65)}
+.journal{position:relative;padding:54px clamp(22px,6vw,64px);background:linear-gradient(180deg,#fffdf9,#fbf3ea);border:1px solid rgba(194,141,120,.4);border-radius:6px;box-shadow:0 1px 0 #fff inset,0 30px 70px rgba(60,37,27,.16),0 4px 14px rgba(60,37,27,.06)}
+.journal::before{content:"";position:absolute;inset:10px;border:1px solid rgba(194,141,120,.28);border-radius:3px;pointer-events:none}
+.journal .jh{border:0;padding:0;margin-bottom:6px}
+.journal .ph{font-size:10.5px;letter-spacing:.28em;color:#a97561}
+.dnum{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(4rem,14vw,6.5rem);line-height:.9;font-weight:500;color:#d9a99a;opacity:.6;text-align:center;margin:14px 0 0}
+.journal h3{text-align:center;font-weight:500;font-size:clamp(2rem,6vw,2.9rem);letter-spacing:.01em;margin:4px 0 0}
+.orn{display:flex;align-items:center;gap:14px;margin:18px auto 22px;max-width:260px;color:#c28d78;font-size:11px}
+.orn::before,.orn::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,#c28d78)}.orn::after{transform:scaleX(-1)}
+.imp{text-align:center;font-size:1.22rem;max-width:560px;margin:0 auto 28px}
+.msgbtn{display:flex;align-items:center;gap:16px;width:100%;text-align:left;margin:0 0 26px;padding:16px 20px;border-radius:14px;border:1px solid rgba(194,141,120,.5);background:linear-gradient(135deg,#fff7f1,#f6e4da);box-shadow:0 10px 26px rgba(150,95,72,.16);transition:.3s;cursor:pointer}
+.msgbtn:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(150,95,72,.24)}
+.msgbtn .seal{flex:0 0 46px;height:46px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:20px;background:radial-gradient(circle at 35% 30%,#d9a08c,#a4604b);box-shadow:0 4px 10px rgba(120,60,40,.35),inset 0 1px 2px rgba(255,255,255,.4)}
+.msgbtn b{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.35rem;font-weight:600;color:var(--brown)}
+.msgbtn small{color:var(--light-brown);font-size:.8rem}
+.msgbtn em{margin-left:auto;font-style:normal;font-size:10px;letter-spacing:.2em;text-transform:uppercase;border:1px solid #c28d78;color:#a97561;border-radius:20px;padding:3px 10px}
+.blk{background:none;border:0;border-top:1px solid rgba(194,141,120,.3);border-radius:0;padding:22px 4px 8px;margin:0 0 14px;line-height:1.8}
+.blk .lbl{font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:#a97561;margin-bottom:8px}
+.b-love{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.28rem;font-style:italic;color:#4a2e20}
+.b-love::first-letter{font-size:2.6em;float:left;line-height:.85;padding:4px 8px 0 0;color:#c28d78;font-style:normal}
+.b-love .lbl,.b-task,.b-soft,.b-know{font-style:normal}
+.b-love .lbl{font-family:system-ui,sans-serif}
+.b-task{font-weight:400}
+.b-aff{border:0;border-top:1px solid rgba(194,141,120,.3);text-align:center;font-size:1.9rem;padding:26px 0 10px;color:#a97561}
+textarea{background:#fffdf9 repeating-linear-gradient(transparent,transparent 31px,rgba(194,141,120,.28) 32px) local;line-height:32px;padding:6px 14px;border:1px solid rgba(194,141,120,.35);border-radius:8px;min-height:160px;margin:14px 0 20px;outline:0}
+textarea:focus{border-color:#c28d78;box-shadow:0 0 0 3px rgba(194,141,120,.15)}
+.nav2{margin-top:30px}
+.rail{display:flex;gap:3px;margin-top:30px}
+.rl{flex:1;height:22px;background:none;border:0;padding:0;position:relative}
+.rl::after{content:"";position:absolute;left:0;right:0;top:9px;height:3px;border-radius:2px;background:rgba(194,141,120,.22);transition:.3s}
+.rl.dn::after{background:#d9a99a}.rl.on::after{background:#8c6250;top:7px;height:7px;border-radius:4px}
+.prog{background:none;border:0;padding:0;box-shadow:none;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--light-brown);position:static}
+.bar{height:3px;background:rgba(194,141,120,.22)}.bar i{background:linear-gradient(90deg,#d9a99a,#a97561)}
+.step{cursor:pointer;position:relative;transition:.3s;background:rgba(255,255,255,.7)}
+.step:hover,.step:focus-visible{transform:translateY(-5px);box-shadow:0 16px 36px rgba(60,37,27,.14);border-color:#c28d78;outline:0}
+.step .more{display:inline-block;margin-top:14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#a97561;border-bottom:1px solid #d9a99a}
+.phsec{margin:0 0 26px;padding-top:18px;border-top:1px solid rgba(194,141,120,.3)}
+.phsec h4{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.55rem;font-weight:600;margin:0 0 8px}
+.phsec p,.phsec li{font-size:.95rem;margin-bottom:8px}.phsec ul{padding-left:20px}
+#phase .box{width:min(820px,100%)}
+.bk{font-family:"Cormorant Garamond",Georgia,serif;color:#3c251b;font-size:1.15rem;line-height:1.75}
+.bk h1,.bk h2,.bk h3{font-weight:500}.bk small{display:block;font-family:system-ui,sans-serif;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:#a97561}
+.bk-cover{min-height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 24px;background:linear-gradient(135deg,#fffdf9,#f6e4da);border-bottom:1px solid rgba(194,141,120,.4)}
+.bk-cover h1{font-size:clamp(2.8rem,9vw,4.6rem);line-height:.95;margin:14px 0}.bk-cover p{font-style:italic;font-size:1.4rem}.bk-nm{margin-top:6px;color:#a97561}
+.bk-pre,.bk-end{padding:50px clamp(22px,7vw,70px)}.bk-pre h2,.bk-end h2,.bk-ph h2{font-size:2.3rem;text-align:center;margin-bottom:14px}
+.bk-s{font-style:italic;font-size:1.4rem;text-align:right;color:#a97561}
+.bk-ph{text-align:center;padding:60px clamp(22px,7vw,70px) 20px;background:#f6e9e1;break-before:page}.bk-ph p{max-width:520px;margin:auto;font-style:italic}
+.bk-ch{padding:44px clamp(22px,7vw,70px);border-top:1px solid rgba(194,141,120,.3);break-inside:avoid}
+.bk-n{font-size:3.4rem;color:#d9a99a;line-height:1}.bk-ch h3{font-size:2rem;margin:2px 0 4px}.bk-l{font-style:italic;margin:18px 0}
+.bk-t{display:block;font-family:system-ui,sans-serif;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:#a97561;margin-top:20px}
+.bk blockquote{margin:8px 0 16px;padding:14px 20px;border-left:2px solid #c28d78;background:#fbf3ea;font-size:1.1rem;white-space:normal}
+.bk-i{background:#fbf3ea;border-radius:8px;padding:14px 18px}.bk-a{text-align:center;font-size:1.5rem;font-style:italic;color:#a97561;margin-top:20px}
+.bk-lines{margin-top:30px}.bk-lines span{display:block;font-style:italic;color:#a97561}.bk-lines::after{content:"";display:block;height:120px;background:repeating-linear-gradient(transparent,transparent 31px,rgba(194,141,120,.4) 32px)}
+.hero{background:linear-gradient(90deg,rgba(255,250,244,.82),rgba(255,250,244,.45) 55%,rgba(255,250,244,0))!important;color:var(--brown)!important}
+.hero .eyebrow,.hero .author-sub{color:#a4552f!important}.hero-text{color:#4a3228!important}.hero-details{color:#6d4a3a!important}
+.hero .btn.o,.hero .secondary{color:var(--brown)!important;border-color:rgba(60,37,27,.3)!important}
+.quote{background:rgba(255,246,236,.7)!important;color:var(--brown)!important;backdrop-filter:blur(12px)}.quote *{color:var(--brown)}
+.logo{white-space:nowrap;font-size:1.05rem}header nav{gap:2px}header nav a{white-space:nowrap;font-size:.76rem;padding:0 7px}.nav-button{white-space:nowrap}
+@media print{body>*{display:none!important}body>#book{display:block!important;position:static;background:none;padding:0}#book .box{max-height:none;box-shadow:none;width:100%!important;border-radius:0}#book .body{overflow:visible}.noprint{display:none!important}.bk-cover{min-height:90vh;break-after:page}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.mood{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}.mood button{width:36px;height:36px;border-radius:50%;border:1px solid rgba(194,141,120,.5);background:none;font-size:13px;transition:.2s}.mood button:hover{background:#f6e4da}.mood button.on{background:#c28d78;color:#fff;border-color:#c28d78}
+.tools{max-width:780px;margin:26px auto 0;text-align:center}.trow{display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.bk-wk{padding:44px clamp(22px,7vw,70px);background:#f6e9e1;break-inside:avoid}.bk-wk h2{font-size:2rem;text-align:center;margin-bottom:12px}.bk-wk blockquote{background:#fffaf4}
+.skip{position:fixed;left:-999px;top:8px;z-index:100;background:#3c251b;color:#fff;padding:10px 16px;border-radius:20px}.skip:focus{left:8px}
+:focus-visible{outline:2px solid #c28d78;outline-offset:3px}
+.wsteps{list-style:none;counter-reset:w;max-width:780px;margin:30px auto 0;display:grid;gap:14px}
+.wsteps li{counter-increment:w;position:relative;padding:18px 20px 18px 74px;background:var(--paper);border:1px solid var(--line);border-radius:16px}
+.wsteps li::before{content:counter(w,decimal-leading-zero);position:absolute;left:18px;top:10px;font-family:"Cormorant Garamond",Georgia,serif;font-size:2.6rem;color:#d9a99a;line-height:1.2}
+.wsteps b{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.4rem;font-weight:600}.wsteps span{font-size:.92rem;color:var(--light-brown)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:820px;margin:30px auto 0}
+.chip{border:1px solid var(--line);background:var(--paper);border-radius:30px;padding:10px 20px;font-size:14px;transition:.25s}
+.chip::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--c);margin-right:9px}
+.chip:hover,.chip[aria-pressed=true]{border-color:var(--c);background:#fff;box-shadow:0 8px 20px rgba(60,37,27,.12)}
+.gcard{max-width:760px;margin:22px auto 0;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:28px 32px;box-shadow:var(--shadow);min-height:120px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 16px}.pills span{background:#f6e4da;border-radius:20px;padding:4px 14px;font-size:13px}
+.gcard dt{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:#a97561;margin-top:12px}.gcard dd{margin:2px 0 0}
+.lib{max-width:780px;margin:30px auto 0}.lib details{border-top:1px solid var(--line);padding:14px 4px}.lib summary{cursor:pointer;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.4rem;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.lib summary::after{content:"+";color:#c28d78}.lib details[open] summary::after{content:"–"}.lib p{margin:10px 0 4px;color:#5c4033}
+.atem{position:fixed;left:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:15;border:1px solid rgba(194,141,120,.6);background:var(--paper);color:var(--brown);border-radius:30px;padding:9px 16px;font-size:12px;letter-spacing:.06em;box-shadow:0 8px 22px rgba(60,37,27,.2)}
+.orb{width:170px;height:170px;margin:28px auto;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:15px;background:radial-gradient(circle at 35% 30%,#e3b9a7,#c28d78 60%,#8c6250);box-shadow:0 0 50px rgba(194,141,120,.5);animation:br 10s ease-in-out infinite}
+@keyframes br{0%{transform:scale(.7)}40%{transform:scale(1.2)}100%{transform:scale(.7)}}
+</style>
+<style>.lg{display:inline-flex;gap:4px;margin-left:10px}.lgb{border:1px solid var(--line);background:transparent;border-radius:20px;padding:4px 10px;font-size:.8rem;color:var(--brown)}.lgb[aria-pressed=true]{background:var(--brown);color:var(--cream)}footer .lg{margin:0 0 8px}</style><style>
+:root{--cream:#fbf1e3;--paper:#fffaf3;--brown:#3c251b;--light-brown:#7d5a49;--rose:#e08a5c;--line:rgba(60,37,27,.14);--shadow:0 20px 60px rgba(120,70,40,.18)}
+body{background:#fbf1e3;font-family:"Inter",system-ui,sans-serif}
+h1,h2,h3,.serif,.logo{font-family:"Cormorant Garamond","Iowan Old Style",Georgia,serif;letter-spacing:.01em}
+h1{background:linear-gradient(120deg,#3c251b 25%,#c8663a 60%,#3c251b 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+#sea{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;--p:.05;background:linear-gradient(180deg,#a8d6ee 0%,#d3eaf0 32%,#fde8d0 52%,#ffd2a6 62%)}
+#sea .sw{position:absolute;left:50%;top:62%;width:0;height:0;transform:translateY(calc(9vh - var(--p)*34vh));transition:transform 5s cubic-bezier(.2,.7,.2,1)}
+#sea .gl{position:absolute;width:min(110vw,720px);aspect-ratio:1;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,240,180,.95),rgba(255,214,140,.5) 22%,rgba(255,190,120,0) 62%);animation:gl 8s ease-in-out infinite}
+#sea .dc{position:absolute;width:min(24vw,150px);aspect-ratio:1;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:#fff7d9;box-shadow:0 0 60px 20px rgba(255,205,120,.85)}
+#sea .sea{position:absolute;left:0;right:0;top:62%;bottom:0;background:linear-gradient(180deg,#f5c99d 0,#8fc8d9 12%,#52a2c0 55%,#2f7fa5)}
+#sea .sea:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(180deg,transparent 0 9px,rgba(255,255,255,.17) 9px 10px);animation:wv 10s linear infinite}
+#sea .rf{position:absolute;left:50%;top:0;bottom:0;width:min(20vw,200px);transform:translateX(-50%);background:repeating-linear-gradient(180deg,rgba(255,238,185,.85) 0 3px,transparent 3px 13px);-webkit-mask:linear-gradient(180deg,#000,transparent 85%);mask:linear-gradient(180deg,#000,transparent 85%);animation:sh 5s ease-in-out infinite;opacity:calc(.25 + var(--p)*.6)}
+#sea .cl{position:absolute;width:38vw;height:9vh;border-radius:50%;background:rgba(255,255,255,.55);filter:blur(22px);animation:cd 90s linear infinite}#sea .c1{top:14%;left:-40vw}#sea .c2{top:30%;left:-60vw;animation-duration:140s;opacity:.7}
+#sea.flash .gl{animation:fl 2.5s ease-out}
+@keyframes wv{to{background-position:0 80px}}@keyframes sh{50%{transform:translateX(-50%) scaleX(1.25);opacity:.5}}@keyframes gl{50%{transform:translate(-50%,-50%) scale(1.07)}}@keyframes cd{to{transform:translateX(190vw)}}@keyframes fl{40%{transform:translate(-50%,-50%) scale(1.5)}}
+@media(prefers-reduced-motion:reduce){#sea *{animation:none!important}}
+main,footer{position:relative;z-index:1}
+header{background:rgba(255,250,244,.74)!important;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+footer{background:rgba(255,250,244,.82)}
+.card,.box,details,.studio,.chip{background:rgba(255,252,247,.8)!important;backdrop-filter:blur(14px);border:1px solid var(--line)!important;color:var(--brown)}
+.journal-container,.journal{background:rgba(255,252,247,.88)!important;backdrop-filter:blur(14px);box-shadow:var(--shadow)!important}
+.btn,.primary,.nav-button{background:linear-gradient(135deg,#f6bf72,#e0834f)!important;color:#3b1d10!important;border:0!important;box-shadow:0 8px 26px rgba(224,131,79,.32);transition:transform .25s,box-shadow .25s}
+.btn:hover,.primary:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(224,131,79,.42)}.btn.o,.secondary{background:rgba(255,255,255,.6)!important;color:var(--brown)!important;border:1px solid var(--line)!important;box-shadow:none}
+input,textarea{background:rgba(255,255,255,.75);color:var(--brown);border:1px solid var(--line);border-radius:14px;padding:12px 14px;width:100%;font:inherit}
+.studio{margin:28px auto;max-width:860px;padding:28px;border-radius:26px;box-shadow:var(--shadow)}.studio h3 small{display:block;font:600 .72rem Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#c8663a;margin-top:4px}
+.studio label{display:block;margin-top:18px;font-size:.85rem;color:var(--light-brown)}.studio input[type=range]{padding:0;accent-color:#e0834f}.stb{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.mic{display:inline-block;margin:8px 0 0;padding:7px 15px;border-radius:30px;border:1px solid var(--line);background:rgba(255,255,255,.8);color:var(--brown);font:600 .8rem Inter,sans-serif}.mic.rec{background:#e0583f;color:#fff;border-color:#e0583f;animation:rc 1.2s ease-in-out infinite}@keyframes rc{50%{box-shadow:0 0 0 8px rgba(224,88,63,.2)}}
+.snd{position:fixed;right:16px;bottom:16px;z-index:60;padding:10px 16px;border-radius:30px;border:1px solid var(--line);background:rgba(255,252,247,.92);color:var(--brown);font:600 .8rem Inter,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.14);transition:opacity .9s,transform .9s}.snd.gone{opacity:0;transform:translateY(10px);pointer-events:none}
+.rad{width:100%;max-width:360px;display:block;margin:0 auto;color:var(--brown)}#ana .box{max-width:680px;max-height:90vh;overflow:auto}#ana p{margin:12px 0}#ana blockquote{border-left:3px solid #e08a5c;padding-left:14px;font-size:1.5rem;margin:18px 0}
+@media print{body>*:not(#ana){display:none!important}#ana{position:static!important;background:#fff!important;color:#000}#ana *{color:#000!important}}
+</style></head>
+<body>
+<a class="skip" href="#tage">Zum Tagebuch springen</a>
+<noscript><p style="padding:90px 20px;text-align:center">Für das Tagebuch wird JavaScript benötigt.</p></noscript>
+<canvas id="hearts" hidden></canvas><div id="sea" aria-hidden="true"><i class="cl c1"></i><i class="cl c2"></i><div class="sw"><i class="gl"></i><i class="dc"></i></div><div class="sea"><i class="rf"></i></div></div>
+
+  <header>
+    <a href="#" class="logo">☀ Seelenfrieden · Michaela Schäfer</a>
+
+    <nav>
+      <a href="#anfang">Willkommen</a><a href="#reise">Die Reise</a><a href="#wissen">Gefühle &amp; Wissen</a>
+      <a href="#buch">Das Buch</a>
+      <a href="#tage">21 Tage</a>
+      <a href="#ueber-uns">Über Michaela</a>
+      <a href="#kontakt">Kontakt</a>
+    <a href="#" onclick="openM('aufk');return false">Aufklärung</a>
+  </nav>
+
+    <a href="#tage" class="nav-button">Jetzt starten</a>
+  </header>
+
+  <main>
+    <section class="hero" id="buch">
+      <div class="hero-content">
+        <div class="eyebrow">Seelenfrieden · von Michaela Schäfer</div>
+
+        <h1>Die Welt<br>in dir</h1>
+        <div class="author-sub">Das Seelenfrieden-Tagebuch</div>
+
+        <p class="hero-text">
+          Ein feinfühliges Tagebuch für alle, die sich selbst besser verstehen, 
+          gesunde Grenzen setzen und neu bei sich ankommen möchten.
+        </p>
+
+        <div class="actions">
+          <a href="#tage" class="primary">Jetzt starten&nbsp; →</a>
+          <a href="#" class="secondary" onclick="openM('aufk');return false">📖 Aufklärung lesen</a>
+        </div>
+      </div>
+
+      <div class="book" role="img" aria-label="Buchcover"><small>Seelenfrieden</small><b>Die Welt in dir</b><i>Das Seelenfrieden-Tagebuch</i><small style="margin-top:28px">Michaela Schäfer</small></div>
+
+      <div class="hero-details">
+        <span>☀ Mehr Selbstvertrauen</span>
+        <span>☀ Mehr Gelassenheit</span>
+        <span>☼ Von Michaela Schäfer</span>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="benefit">
+        <div class="icon">🌿</div>
+        <div>
+          <h3>Tägliche Impulse</h3>
+          <p>Ehrliche Gedanken von Michaela, die stärken und zum Nachdenken anregen.</p>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <div class="icon">☀</div>
+        <div>
+          <h3>Tiefe Übungen</h3>
+          <p>Kreative und alltagstaugliche Aufgaben für mehr Selbstannahme.</p>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <div class="icon">📊</div>
+        <div>
+          <h3>Eigenbewertung</h3>
+          <p>Reflektiere deine persönliche Entwicklung Tag für Tag.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 21-TAGE-TAGEBUCH -->
+<section id="tage">
+  <div class="section-title"><span>Deine 21-Tage-Transformation</span><h2>Dein geschützter Raum im Alltag</h2><p id="greet"></p></div>
+  <div class="journal-container" id="startBox" style="max-width:560px;text-align:center">
+    <label class="lbl" for="nm">Dein Vorname (optional)</label>
+    <input type="text" id="nm" placeholder="z. B. Maria" autocomplete="given-name" style="margin:10px 0 18px;text-align:center">
+    <button class="btn" onclick="startJourney()">Ja, ich starte jetzt</button>
+    <p class="hint" style="margin-top:16px">Deine Einträge bleiben ausschließlich auf deinem Gerät.</p>
+  </div>
+  <div class="prog" id="prog" hidden style="max-width:780px;margin:30px auto 0"><span id="pt">0 / 21 Tagen</span><div class="bar"><i id="pf"></i></div></div>
+  <div class="journal-container journal" id="days"></div>
+  <div class="tools"><div class="trow">
+    <button class="btn o" onclick="exportData()">Einträge sichern</button>
+    <button class="btn o" onclick="$('#imp').click()">Einträge laden</button><input type="file" id="imp" accept=".json,application/json" hidden onchange="importData(this.files[0])">
+    <button class="btn o" onclick="shareSite()">Teilen</button>
+    <button class="btn o" id="inst" hidden onclick="installApp()">App installieren</button>
+  </div><div class="trow"><label for="icsT" style="font-size:13px">Tägliche Erinnerung um</label><input type="time" id="icsT" value="08:00" style="padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--paper)"><button class="btn o" onclick="makeICS()">Kalender-Datei (.ics)</button></div>
+  <p class="hint">Tipp: „Einträge sichern“ speichert deine Texte als Datei – so gehen sie beim Gerätewechsel nicht verloren. Auf dem iPhone: Teilen → „Zum Home-Bildschirm“, um die Seite wie eine App zu nutzen.</p></div>
+</section>
+
+<section id="anfang"><div class="section-title"><span>Willkommen</span><h2>Dein Weg beginnt hier</h2><p>So begleitet dich Seelenfrieden durch die 21 Tage – ruhig, Schritt für Schritt und ganz in deinem Tempo.</p></div><ol class="wsteps" id="wSteps"></ol></section>
+
+<section id="reise">
+      <div class="section-title">
+        <span>Deine persönliche Reise</span>
+        <h2>Du musst nicht perfekt sein, um bei dir anzukommen.</h2>
+        <p>
+          Dieses von Michaela Schäfer entworfene Buch begleitet dich Schritt für Schritt –
+          ehrlich, modern und ohne Druck.
+        </p>
+      </div>
+
+      <div class="steps">
+        <article class="step" role="button" tabindex="0" onclick="openPhase(1)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPhase(1)}" aria-label="Mehr über Phase 1 lesen">
+          <div class="step-number">01</div>
+          <h3>Erkennen</h3>
+          <p>Verstehe, woher deine Gedanken, Gefühle und inneren Stimmen kommen.</p><span class="more">Mehr erfahren →</span>
+        </article>
+
+        <article class="step" role="button" tabindex="0" onclick="openPhase(2)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPhase(2)}" aria-label="Mehr über Phase 2 lesen">
+          <div class="step-number">02</div>
+          <h3>Annehmen</h3>
+          <p>Lerne, dich auch an schwierigen Tagen liebevoll zu behandeln.</p><span class="more">Mehr erfahren →</span>
+        </article>
+
+        <article class="step" role="button" tabindex="0" onclick="openPhase(3)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPhase(3)}" aria-label="Mehr über Phase 3 lesen">
+          <div class="step-number">03</div>
+          <h3>Wählen</h3>
+          <p>Entdecke deine Bedürfnisse, Grenzen und deinen eigenen Weg.</p><span class="more">Mehr erfahren →</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="wissen"><div class="section-title"><span>Gefühle &amp; Wissen</span><h2>Gefühle verstehen</h2><p>Jedes Gefühl hat eine Botschaft. Tippe auf ein Gefühl und entdecke, was es dir sagt, was du brauchst und was dir jetzt guttun kann.</p></div>
+<div class="chips" id="gChips" role="group" aria-label="Gefühle"></div><div class="gcard" id="gCard" aria-live="polite"></div>
+<div class="section-title" style="margin-top:60px"><span>Bibliothek</span><h2>Wissen für deinen Weg</h2></div>
+<div class="lib" id="lib"></div></section>
+
+<section class="quote">
+      <p>
+        „Du musst dich nicht neu erfinden.
+        Du darfst dich wiederfinden.“
+      </p>
+      <small>Michaela Schäfer • 21-Tage-Reise</small>
+    </section>
+
+    <section id="ueber-uns">
+      <div class="newsletter">
+        <div class="section-title">
+          <span>Über die Autorin</span>
+          <h2>Michaela Schäfer</h2>
+          <p>
+            Mit diesem Tagebuch möchte Michaela einen sicheren, warmen Ort schaffen, 
+            an dem du ganz bei dir ankommen kannst. Bleibe verbunden für Neuigkeiten.
+          </p>
+        </div>
+
+        <p id="nlBox" style="margin-top:26px"><a class="btn" id="nl" href="#">✉️ Neuigkeiten per E-Mail anfragen</a></p><p class="hint" style="max-width:520px;margin:14px auto 0">Es öffnet sich dein E-Mail-Programm. Deine Adresse wird erst mit dem Absenden an Michaela übermittelt.</p>
+      </div>
+    </section>
+
+    <section id="premium" hidden><div class="section-title"><span>Für dich</span><h2>Mehr von Seelenfrieden</h2></div><div class="grid3" id="premList" style="max-width:820px;margin:auto"></div></section>
+<section id="danke" style="padding-bottom:20px">
+  <div class="section-title"><span>Von Herzen</span><h2>Freiwillig unterstützen</h2><p>Das Tagebuch ist kostenlos nutzbar. Wenn es dir guttut, freut sich Michaela über einen kleinen Beitrag. Erst mit deinem Klick verlässt du diese Seite – vorher fließen keine Daten an PayPal.</p></div>
+  <div class="pay" id="pay"></div>
+</section>
+<section id="kontakt" style="padding-top:20px">
+  <div class="section-title"><span>Direkter Draht</span><h2>Kontakt &amp; Gruppe</h2><p>Hier findest du alle wichtigen Daten und die Verbindung zu unserer Gruppe.</p></div>
+  <div class="card">
+    <h3 class="serif" style="font-size:28px;margin-bottom:14px">Michaela Schäfer</h3>
+    <p><strong style="color:var(--light-brown)">📍 Adresse:</strong><br>Kaiser-Friedrich-Str. 82<br>41460 Neuss</p>
+    <p><strong style="color:var(--light-brown)">✉️ E-Mail:</strong> <a id="mail" href="#"></a></p>
+    <p><a class="btn" id="wa" style="padding:8px 18px;font-size:12px;box-shadow:none" target="_blank" rel="noopener noreferrer">💬 WhatsApp-Gruppe beitreten</a></p>
+    <p class="hint">Mit dem Klick öffnest du WhatsApp (Meta). Es gelten deren Datenschutzbestimmungen.</p>
+  </div>
+</section>
+</main>
+
+  <footer>
+  <span>© 2026 Seelenfrieden · Michaela Schäfer – Das Seelenfrieden-Tagebuch</span>
+  <span><button onclick="openM('legal','imp')">Impressum</button><button onclick="openM('legal','dat')">Datenschutz</button><button onclick="openM('legal','agb')">Nutzungsbedingungen</button><button onclick="openM('legal','ges')">Gesundheitshinweis</button><button onclick="showCC()">Cookie-Einstellungen</button></span>
+  <span style="width:100%">Dieses Angebot ersetzt keine ärztliche oder psychotherapeutische Behandlung. Mit Liebe gestaltet für deinen Weg zurück zu dir.</span>
+</footer>
+
+
+  
+
+  <!-- AUFKLÄRUNG -->
+<div class="ov" id="aufk" role="dialog" aria-modal="true" aria-label="Aufklärung"><div class="box">
+  <button class="x" onclick="closeM()" aria-label="Schließen">×</button>
+  <h2>Aufklärung für mehr Bewusstsein</h2>
+  <div class="tabs">
+    <button data-t="a1" class="on">Was ist Selbstliebe?</button><button data-t="a2">Stress &amp; Körper</button><button data-t="a3">Innere Stimme</button><button data-t="a4">Grenzen</button><button data-t="a5">Kleine Übungen</button><button data-t="a6">Hilfe &amp; Notruf</button>
+  </div>
+  <div class="body">
+    <div class="pane on" data-t="a1"><h3>Was Selbstliebe wirklich meint</h3>
+      <p>Selbstliebe ist keine Dauer-Euphorie und kein Egoismus. Sie ist eine Haltung: dich ernst zu nehmen, freundlich mit dir zu sprechen und deine Bedürfnisse nicht ständig hinten anzustellen.</p>
+      <p>Die Psychologie spricht oft von <strong>Selbstmitgefühl</strong> (z. B. Kristin Neff): sich in schwierigen Momenten wie einer guten Freundin zu begegnen. Studien deuten darauf hin, dass das mit weniger Selbstkritik und mehr emotionaler Stabilität zusammenhängt.</p>
+      <ul><li><strong>Selbstwert</strong> hängt oft an Leistung und Vergleichen – er schwankt.</li><li><strong>Selbstmitgefühl</strong> gilt auch an schlechten Tagen – es trägt.</li></ul></div>
+    <div class="pane" data-t="a2"><h3>Stress, Nervensystem &amp; Körper</h3>
+      <p>Dauerstress und harte Selbstkritik versetzen den Körper in Alarmbereitschaft: Herz, Atem und Muskeln spannen an. Ruhige, langsame Atmung (z. B. länger aus- als einatmen) kann helfen, diese Anspannung zu senken.</p>
+      <p>Das Tagebuch ist <strong>keine Wundertherapie</strong>. Es kann aber Pausen schaffen, in denen du spürst, was los ist – ein erster Schritt zu mehr Gelassenheit.</p>
+      <p class="hint">Hinweis: Wirkungen sind individuell verschieden. Es werden keine Heilversprechen gegeben.</p></div>
+    <div class="pane" data-t="a3"><h3>Deine innere Stimme</h3>
+      <p>Viele Sätze in uns („Ich bin nicht gut genug“) stammen aus früheren Erfahrungen. Sie waren oft ein Schutz – heute dürfen sie überprüft werden.</p>
+      <ul><li><strong>Bemerken:</strong> „Aha, der Kritiker meldet sich.“</li><li><strong>Benennen:</strong> Was genau sagt er? Wem gehört der Satz ursprünglich?</li><li><strong>Umformulieren:</strong> Was würde ich einer Freundin sagen?</li></ul></div>
+    <div class="pane" data-t="a4"><h3>Gesunde Grenzen</h3>
+      <p>Ein Nein zu anderen ist ein Ja zu dir. Grenzen sind keine Mauern, sondern Orientierung: Wo endet meine Kraft, was brauche ich?</p>
+      <ul><li>Kurz und freundlich: „Das schaffe ich gerade nicht.“</li><li>Ohne lange Rechtfertigung.</li><li>Üben im Kleinen – zuerst bei Situationen mit niedrigem Risiko.</li></ul></div>
+    <div class="pane" data-t="a5"><h3>Drei Mini-Übungen (je 1–2 Minuten)</h3>
+      <ul><li><strong>3 Atemzüge:</strong> Langsam einatmen, doppelt so lange ausatmen.</li><li><strong>Hand aufs Herz:</strong> „Gerade ist es schwer. Ich bin an meiner Seite.“</li><li><strong>Drei Dinge:</strong> Notiere drei Dinge, die heute okay waren.</li></ul>
+      <p>An Tagen mit wenig Kraft reicht jede Tages-„kleine Variante“. Es gibt kein Verpassen.</p></div>
+    <div class="pane" data-t="a6"><h3>Wann du dir Unterstützung holen solltest</h3>
+      <p>Wenn Traurigkeit, Angst oder Leere lange anhalten, du nicht mehr schläfst/isst oder an Selbstverletzung oder Suizid denkst: Bitte sprich mit jemandem. Du musst das nicht allein tragen.</p>
+      <ul><li><strong>Notfall: 112</strong></li><li><strong>Telefonseelsorge (kostenlos, rund um die Uhr):</strong> 0800 111 0 111 · 0800 111 0 222 · 116 123</li><li><strong>Ärztlicher Bereitschaftsdienst:</strong> 116 117</li><li><strong>Nummer gegen Kummer (Kinder/Jugendliche):</strong> 116 111</li><li><strong>Hilfetelefon Gewalt gegen Frauen:</strong> 116 016</li></ul>
+      <p class="hint">Auch Hausarzt oder Psychotherapeut:innen (Terminservice: 116 117) sind gute erste Anlaufstellen.</p></div>
+  </div>
+</div></div>
+
+<!-- RECHTLICHES (Muster – bitte prüfen lassen) -->
+<div class="ov" id="legal" role="dialog" aria-modal="true" aria-label="Rechtliche Hinweise"><div class="box">
+  <button class="x" onclick="closeM()" aria-label="Schließen">×</button>
+  <h2>Rechtliche Hinweise</h2>
+  <div class="tabs"><button data-t="imp" class="on">Impressum</button><button data-t="dat">Datenschutz</button><button data-t="agb">Nutzung</button><button data-t="ges">Gesundheit</button></div>
+  <div class="body">
+    <div class="pane on" data-t="imp"><h3>Angaben gemäß § 5 DDG</h3>
+      <p><strong>Michaela Schäfer</strong><br>Kaiser-Friedrich-Str. 82<br>41460 Neuss</p><p>E-Mail: <span class="cmail"></span></p>
+      <p class="hint">Telefonnummer ergänzen, falls vorhanden (empfohlen für schnelle Kontaktaufnahme).</p></div>
+    <div class="pane" data-t="dat"><h3>Datenschutzerklärung</h3>
+      <p><strong>Verantwortliche:</strong> Michaela Schäfer, Kaiser-Friedrich-Str. 82, 41460 Neuss, <span class="cmail"></span>.</p>
+      <p><strong>Tagebuch &amp; Profil:</strong> Name, Startdatum, Häkchen und Notizen werden ausschließlich im Browser (localStorage) auf deinem Gerät gespeichert. Es erfolgt keine Übertragung an einen Server und kein Tracking (Art. 6 Abs. 1 lit. b DSGVO bzw. § 25 Abs. 2 TDDDG, da für den gewünschten Dienst erforderlich). Du kannst alles jederzeit löschen:</p>
+      <p><button class="btn o" onclick="wipe()">Alle meine Daten löschen</button></p>
+      <p><strong>Schriften (Google Fonts):</strong> Nur nach deiner Einwilligung laden wir Schriftarten von Google (Google Ireland Ltd.). Dabei wird deine IP-Adresse übermittelt. Ohne Einwilligung nutzt die Seite Systemschriften. Widerruf jederzeit über „Cookie-Einstellungen“ (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG).</p>
+      <p><strong>PayPal:</strong> Erst wenn du auf einen PayPal-Link klickst, wirst du zu PayPal (PayPal (Europe) S.à r.l. et Cie, S.C.A., Luxemburg) weitergeleitet; dort gilt deren Datenschutzerklärung. Zahlungsdaten erhalten wir nicht.</p>
+      <p><strong>Hosting (GitHub Pages):</strong> Diese Seite wird über GitHub Pages (GitHub Inc., USA, ein Unternehmen von Microsoft) ausgeliefert. Dabei verarbeitet GitHub technisch notwendige Server-Logdaten (z. B. IP-Adresse). Die Übermittlung in die USA erfolgt auf Grundlage des EU-US Data Privacy Framework bzw. von Standardvertragsklauseln (Art. 6 Abs. 1 lit. f DSGVO).</p>
+      <p><strong>Sicherung, Kalender, App:</strong> Sicherungsdatei und Kalender-Datei werden ausschließlich lokal in deinem Browser erzeugt und nicht übertragen. Die Offline-Funktion speichert Seitendateien im Zwischenspeicher deines Geräts.</p><p><strong>Newsletter (optional):</strong> Trägst du dich ein, wird deine E-Mail-Adresse beim Newsletter-Anbieter (Anbieter hier eintragen) gespeichert. Die Anmeldung erfolgt per Double-Opt-in (Art. 6 Abs. 1 lit. a DSGVO); Abmeldung jederzeit über den Link in jeder E-Mail.</p><p><strong>Deine Rechte:</strong> Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit (Art. 15–21 DSGVO) sowie Beschwerde bei einer Aufsichtsbehörde, z. B. der LDI NRW.</p>
+      <p class="hint">Muster-Text. Bitte vor Veröffentlichung juristisch prüfen lassen.</p></div>
+    <div class="pane" data-t="agb"><h3>Nutzungsbedingungen</h3>
+      <p>Das Angebot dient der persönlichen Selbstreflexion und Selbstfürsorge. Es besteht kein Heilversprechen. Alle Inhalte sind urheberrechtlich geschützt. Die Nutzung erfolgt auf eigene Verantwortung.</p></div>
+    <div class="pane" data-t="ges"><h3>Gesundheitshinweis</h3>
+      <p>Das Tagebuch dient der Selbsterkenntnis und Inspiration. Es ersetzt keine ärztliche, psychologische oder psychotherapeutische Behandlung. Bei akuten Krisen: 112 oder Telefonseelsorge 0800 111 0 111 (kostenlos).</p></div>
+  </div>
+</div></div>
+
+<div class="ov" id="phase" role="dialog" aria-modal="true" aria-labelledby="phT"><div class="box">
+  <button class="x" onclick="closeM()" aria-label="Schließen">×</button>
+  <h2><span id="phT"></span> <small id="phS" style="font-size:.9rem;letter-spacing:.2em;text-transform:uppercase;color:var(--light-brown);font-family:system-ui,sans-serif"></small></h2>
+  <div class="tabs" id="phTabs"></div>
+  <div class="body" id="phBody"><div id="phB"></div></div>
+</div></div>
+
+<!-- WILLKOMMEN -->
+<div class="ov" id="welcome" role="dialog" aria-modal="true" aria-label="Willkommen"><div class="box">
+  <button class="x" onclick="closeM()" aria-label="Schließen">×</button>
+  <h2>Schön, dass du da bist</h2>
+  <div class="body"><p class="imp" style="text-align:left">Du betrittst einen geschützten Raum. Hier ist nichts richtig oder falsch. So gehst du deinen Weg:</p><ol class="wsteps" id="wSteps2"></ol><div style="text-align:center;margin-top:18px"><button class="btn" onclick="closeM();$('#tage').scrollIntoView({behavior:'smooth'})">Los geht’s</button></div></div>
+</div></div>
+<!-- ATEM -->
+<div class="ov" id="breath" role="dialog" aria-modal="true" aria-label="Atem-Moment"><div class="box" style="text-align:center;padding-bottom:28px">
+  <button class="x" onclick="closeM()" aria-label="Schließen">×</button>
+  <h2>Atem-Moment</h2><p style="padding:0 26px;color:var(--light-brown)">Vier Sekunden einatmen, sechs Sekunden ausatmen. Schon ein paar Runden beruhigen dein Nervensystem.</p>
+  <div class="orb"><span id="bTxt">Einatmen …</span></div><button class="btn o" onclick="closeM()">Danke, das tat gut</button>
+</div></div>
+<button class="atem" onclick="openBreath()" aria-label="Atem-Moment öffnen">Atem-Moment</button>
+
+<!-- NACHRICHT VON IRIS -->
+<div class="ov" id="msg" role="dialog" aria-modal="true" aria-label="Nachricht von Michaela"><div class="box">
+  <button class="x" onclick="closeM()" aria-label="Schließen">×</button>
+  <h2 id="msgT">Nachricht von Michaela</h2>
+  <div class="body"><div id="msgB"></div><audio id="msgA" controls preload="none" hidden style="width:100%;margin-top:14px"></audio></div>
+</div></div>
+
+<!-- TAGEBUCH-BUCH -->
+<div class="ov" id="book" role="dialog" aria-modal="true" aria-label="Mein Tagebuch"><div class="box" style="width:min(860px,100%)">
+  <button class="x noprint" onclick="closeM()" aria-label="Schließen">×</button>
+  <div class="body" id="bookB" style="padding:0"></div>
+  <div class="noprint" style="padding:12px 20px;border-top:1px solid var(--line);text-align:center"><button class="btn" onclick="window.print()">Als PDF speichern / drucken</button> <button class="btn o" onclick="closeM()">Schließen</button></div>
+</div></div>
+
+<!-- FINALE -->
+<div class="ov" id="fin"><div class="box"><h2>Du bist angekommen.</h2><p class="serif" style="font-size:1.5rem" id="finTxt"></p><p style="margin:14px 0">„Du musst dich nicht neu erfinden – du hast dich wiedergefunden.“ — Michaela Schäfer</p><button class="btn" onclick="openBook()">Mein Tagebuch-Buch ansehen</button> <button class="btn o" onclick="closeM()">Weiter</button></div></div>
+
+<!-- COOKIE / EINWILLIGUNG -->
+<div id="cc" role="dialog" aria-label="Datenschutz-Einstellungen">
+  <strong>Deine Privatsphäre</strong>
+  <p style="margin-top:6px">Wir setzen <strong>keine Tracking- oder Werbe-Cookies</strong>. Dein Tagebuch wird nur lokal gespeichert. Optional kannst du Google Fonts (schönere Schrift, Datenübertragung an Google) erlauben.</p>
+  <label><input type="checkbox" checked disabled> Notwendig: lokale Speicherung deines Tagebuchs &amp; dieser Auswahl</label>
+  <label><input type="checkbox" id="ccF"> Google Fonts laden (Google Ireland Ltd.)</label>
+  <div class="acts"><button class="btn o" onclick="saveCC(false)">Nur notwendige</button><button class="btn o" onclick="saveCC('sel')">Auswahl speichern</button><button class="btn" onclick="saveCC(true)">Alle akzeptieren</button></div>
+  <p style="margin-top:8px;font-size:.8rem"><button style="background:none;border:0;text-decoration:underline;font-size:.8rem" onclick="openM('legal','dat')">Datenschutz</button> · <button style="background:none;border:0;text-decoration:underline;font-size:.8rem" onclick="openM('legal','imp')">Impressum</button></p>
+</div>
+
+<script>/* ============================================================
+   NACHRICHTEN VON IRIS – hier kannst du jederzeit ergänzen
+   ------------------------------------------------------------
+   So geht's auf GitHub: Datei öffnen → Stift-Symbol (Edit) →
+   Text zwischen die Anführungszeichen schreiben → "Commit changes".
+   Nach ca. 1 Minute ist die Nachricht live.
+
+   Die Zahl vor dem Doppelpunkt ist der Tag (1–21).
+   text  : deine Nachricht. Zeilenumbruch = \n  |  {name} = Vorname der Person
+   datum : optional, z. B. "02.10.2026"
+   audio : optional, Sprachnachricht, z. B. "audio/tag1.mp3"
+           (Datei in den Ordner "audio" hochladen)
+
+   WICHTIG: Diese Datei ist auf GitHub öffentlich lesbar.
+   Schreibe hier keine vertraulichen Daten oder Namen einzelner Personen.
+   Verwende keine doppelten Anführungszeichen " im Text – nimm „ “ oder '.
+   ============================================================ */
+const NACHRICHTEN = {};
+</script>
+<script>
+/* ===== HIER DEINE DATEN EINTRAGEN (Nachrichten stehen in nachrichten.js) ===== */
+const CONFIG={
+  email:"",           
+  whatsapp:"",
+  paypal:"https://www.paypal.me/DEINNAME",        // ← deinen PayPal.me-Link eintragen
+  amounts:[5,10,20],
+  // Premium-Angebote: sobald "link" (PayPal-Link) eingetragen ist, erscheint das Angebot automatisch
+  premium:[
+    {titel:"Dein Tagebuch als gedrucktes Buch",text:"Liebevoll gestaltet, mit deinen Einträgen.",preis:"29 €",link:""},
+    {titel:"Geführte Meditationen von Michaela",text:"21 Audio-Impulse zum Hören.",preis:"19 €",link:""}
+  ],
+  // Newsletter (MailerLite/Brevo): Formular-Adresse des Anbieters bei "action" eintragen
+  newsletter:{action:"",emailField:"EMAIL"}
+};
+const daysData = [
+            // PHASE 1: ERKENNEN
+            {
+                day: 1,
+                phase: "Phase 1: Erkennen",
+                title: "Ich sehe mich",
+                aha: "Heute geht es darum, ehrlich wahrzunehmen, wie es dir wirklich geht – jenseits aller automatischen Masken und Rollen, die du im Alltag trägst.",
+                neuro: "Deine Tagesaufgabe:<br>Vervollständige die folgenden Sätze im Tagebuch:<br>• Im Moment fühle ich mich...<br>• Was mich tief im Inneren beschäftigt, ist...",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser und ein freundlicher Satz an dich selbst: „Heute reicht das, was ich schaffe.“ Den Rest darfst du liegen lassen.",
+                checkin: "Mini-Check-in:<br>• Innerer Stress gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie fühlt sich das Ankommen heute an?"
+            },
+            {
+                day: 2,
+                phase: "Phase 1: Erkennen",
+                title: "Meine inneren Stimmen",
+                aha: "Oft sprechen wir mit uns selbst in einem Ton, den wir keinem anderen Menschen zumuten würden. Heute beobachten wir den inneren Kritiker sanft und ohne Bewertung.",
+                neuro: "Deine Tagesaufgabe:<br>Welcher kritische Satz taucht bei dir am häufigsten auf („Ich muss noch...“, „Ich bin nicht gut genug...“)? Woher kennst du diesen Satz ursprünglich?",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Lege eine Hand auf dein Herz und sage dir leise: „Ich darf auch einfach nur da sein.“",
+                checkin: "Mini-Check-in:<br>• Stresspegel: 0–10?<br>• Stimmung in einem Wort?<br>• Kannst du den Kritiker heute kurz ziehen lassen?"
+            },
+            {
+                day: 3,
+                phase: "Phase 1: Erkennen",
+                title: "Wertvoll ohne Leistung",
+                aha: "Dein Wert ist nicht an dein Tun gebunden. Du bist nicht nur wertvoll, wenn du funktionierst, leistest oder dich aufopfernd um andere kümmerst.",
+                neuro: "Deine Tagesaufgabe:<br>Schreibe drei Dinge auf, die du an dir schätzt, die nichts mit deinen Aufgaben, deinem Beruf oder deiner Leistung zu tun haben.",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Notiere ein einziges Wort, das beschreibt, was deinen Kern ausmacht (z. B. Wärme, Humor, Tiefe).",
+                checkin: "Mini-Check-in:<br>• Innerer Druck: 0–10?<br>• Fühlst du dich wertvoll im Sein?"
+            },
+            {
+                day: 4,
+                phase: "Phase 1: Erkennen",
+                title: "Meine Energieräuber",
+                aha: "Oft geben wir Energie an Situationen oder Menschen ab, ohne es zu merken. Erkennen ist der erste Schritt, um deine eigene Kraft wieder zu dir zurückzuholen.",
+                neuro: "Deine Tagesaufgabe:<br>Welche Situation oder Begegnung hat dich zuletzt ausgelaugt? Welches kleine Detail kannst du beim nächsten Mal verändern?",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Schließe für eine Minute die Augen und frage dich: „Was würde mir jetzt in diesem Augenblick guttun?“",
+                checkin: "Mini-Check-in:<br>• Energie-Level: 0–10?<br>• Stimmung?"
+            },
+            {
+                day: 5,
+                phase: "Phase 1: Erkennen",
+                title: "Raum für alle Gefühle",
+                aha: "Unangenehme Gefühle wie Wut, Trauer oder Überforderung sind keine Fehler. Sie sind wertvolle Wegweiser, die dir zeigen, wo deine Grenzen liegen.",
+                neuro: "Deine Tagesaufgabe:<br>Welches Gefühl drückst du im Alltag am häufigsten weg? Erlaube ihm heute für zwei Minuten, einfach dazusein.",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Atme tief ein und flüstere beim Ausatmen: „Alles, was da ist, darf jetzt kurz da sein.“",
+                checkin: "Mini-Check-in:<br>• Emotionale Spannung: 0–10?"
+            },
+            {
+                day: 6,
+                phase: "Phase 1: Erkennen",
+                title: "Meine alten Schutzmuster",
+                aha: "Viele Reaktionen – wie allen helfen zu wollen oder Konflikten auszuweichen – waren früher ein Schutz. Heute bist du erwachsen und darfst neue Wege wählen.",
+                neuro: "Deine Tagesaufgabe:<br>Welches Verhaltensmuster hat dir früher geholfen, engt dich heute aber mehr ein als es dich schützt?",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Sage dir sanft: „Danke für meinen alten Schutz. Heute bin ich sicher.“",
+                checkin: "Mini-Check-in:<br>• Wie sicher fühlst du dich bei dir?"
+            },
+            {
+                day: 7,
+                phase: "Phase 1: Erkennen",
+                title: "Wochen-Rückschau: Erkennen",
+                aha: "Die erste Woche liegt hinter dir. Es geht nicht darum, was du „geschafft“ hast, sondern was du feinfühlig über dich erfahren durftest.",
+                neuro: "Deine Tagesaufgabe:<br>Was war deine wichtigste Erkenntnis der letzten 7 Tage? Worin hast du dich selbst ein Stück besser verstanden?",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Bedanke dich einfach bei dir selbst für deine Aufmerksamkeit in den letzten sieben Tagen.",
+                checkin: "Mini-Check-in:<br>• Stolz auf Woche 1: 0–10?"
+            },
+
+            // PHASE 2: ANNEHMEN
+            {
+                day: 8,
+                phase: "Phase 2: Annehmen",
+                title: "Sanftmut statt Strenge",
+                aha: "Wenn etwas schiefgeht, neigen wir dazu, streng mit uns zu sein. Selbstmitgefühl bedeutet, dein eigener bester Freund zu werden.",
+                neuro: "Deine Tagesaufgabe:<br>Stell dir vor, eine liebe Freundin erzählt dir von deinen Zweifeln. Was würdest du ihr von Herzen antworten?",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Sprich deinen Namen sanft aus und füge hinzu: „Ich bin an deiner Seite.“",
+                checkin: "Mini-Check-in:<br>• Selbstmitgefühl heute: 0–10?"
+            },
+            {
+                day: 9,
+                phase: "Phase 2: Annehmen",
+                title: "Die Erlaubnis zur Unperfektion",
+                aha: "Perfektionismus ist oft der Versuch, sich vor Ablehnung zu schützen. Doch echte Verbindung entsteht erst im Unperfekten.",
+                neuro: "Deine Tagesaufgabe:<br>Wo darfst du heute bewusst Fünf gerade sein lassen? Was passiert, wenn es nur „gut genug“ ist?",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Lass heute bewusst eine Kleinigkeit liegen, die nicht dringend ist.",
+                checkin: "Mini-Check-in:<br>• Entspannung bei Unperfektion: 0–10?"
+            },
+            {
+                day: 10,
+                phase: "Phase 2: Annehmen",
+                title: "Mein Körper als Anker",
+                aha: "Dein Körper trägt dich durch jeden Tag. Er sendet dir ständig Signale – hören wir heute liebevoll hin.",
+                neuro: "Deine Tagesaufgabe:<br>Mache einen kurzen Körperscan von den Füßen bis zum Kopf. Wo sitzt Anspannung? Wo wohnt Ruhe?",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Reibe deine Hände warm und lege sie auf eine Stelle, die sich müde anfühlt.",
+                checkin: "Mini-Check-in:<br>• Körpergefühl: 0–10?"
+            },
+            {
+                day: 11,
+                phase: "Phase 2: Annehmen",
+                title: "Die schwierigen Tage umarmen",
+                aha: "Es wird Tage geben, an denen du dich schwer oder müde fühlst. Auch diese Tage gehören ganz natürlich zu deiner Reife.",
+                neuro: "Deine Tagesaufgabe:<br>Schreibe dir eine Notiz für schwierige Tage: „Wenn es dunkel ist, darf ich...“",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Erlaube dir einfach, für 5 Minuten schwer und müde zu sein.",
+                checkin: "Mini-Check-in:<br>• Erlaubnis zur Müdigkeit: 0–10?"
+            },
+            {
+                day: 12,
+                phase: "Phase 2: Annehmen",
+                title: "Die Kunst der Pause",
+                aha: "Eine Pause ist keine Belohnung, die man sich verdienen muss. Sie ist eine Notwendigkeit, um bei sich zu bleiben.",
+                neuro: "Deine Tagesaufgabe:<br>Nimm dir heute 10 Minuten echte Pause – ohne Handy, ohne Aufgabe. Was nimmst du wahr?",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Drei Minuten lang aus dem Fenster schauen und nur Wolken beobachten.",
+                checkin: "Mini-Check-in:<br>• Ruhe-Erlebnis: 0–10?"
+            },
+            {
+                day: 13,
+                phase: "Phase 2: Annehmen",
+                title: "Trost schenken",
+                aha: "Wir suchen Trost oft im Außen. Doch die tiefste Geborgenheit entsteht, wenn wir lernen, uns selbst zu halten.",
+                neuro: "Deine Tagesaufgabe:<br>Was gibt dir sofort Wärme (Tee, Decke, Kerze, Musik)? Schenke dir heute bewusst genau das.",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Trinke die ersten drei Schlucke eines warmen Getränks ganz bewusst.",
+                checkin: "Mini-Check-in:<br>• Geborgenheit: 0–10?"
+            },
+            {
+                day: 14,
+                phase: "Phase 2: Annehmen",
+                title: "Wochen-Rückschau: Annehmen",
+                aha: "Zwei Wochen Selbstfürsorge. Du lernst Schritt für Schritt, nicht mehr gegen dich zu kämpfen.",
+                neuro: "Deine Tagesaufgabe:<br>Wo konntest du in dieser Woche weicher mit dir werden? Welcher Moment der Selbstannahme tat gut?",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Atme tief ein und sage dir: „Ich akzeptiere mich genau so, wie ich bin.“",
+                checkin: "Mini-Check-in:<br>• Selbstannahme: 0–10?"
+            },
+
+            // PHASE 3: WÄHLEN
+            {
+                day: 15,
+                phase: "Phase 3: Wählen",
+                title: "Mein klares Nein",
+                aha: "Jedes Nein zu Erwartungen anderer ist ein Ja zu dir selbst. Grenzen schützen deine Energie und deine Würde.",
+                neuro: "Deine Tagesaufgabe:<br>Wo oder zu wem möchtest du in nächster Zeit öfter Nein sagen, um dich selbst zu schützen?",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Übe im Stillen den Satz: „Nein, das passt für mich heute nicht.“",
+                checkin: "Mini-Check-in:<br>• Mut zur Grenze: 0–10?"
+            },
+            {
+                day: 16,
+                phase: "Phase 3: Wählen",
+                title: "Meine wahren Bedürfnisse",
+                aha: "Was brauchst du wirklich – nicht was man brauchen „sollte“? Hinter jedem Wunsch steht ein unerfülltes Bedürfnis.",
+                neuro: "Deine Tagesaufgabe:<br>Vervollständige:<br>• Ich brauche mehr... in meinem Leben.<br>• Ich brauche weniger... in meinem Alltag.",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Schreibe ein einziges Wort auf, nach dem du dich sehnst (z. B. Ruhe, Natur).",
+                checkin: "Mini-Check-in:<br>• Klarheit über Bedürfnisse: 0–10?"
+            },
+            {
+                day: 17,
+                phase: "Phase 3: Wählen",
+                title: "Mein inneres Ja",
+                aha: "Wenn du alten Ballast loslässt, entsteht Raum für das, was dein Herz wirklich zum Leuchten bringt.",
+                neuro: "Deine Tagesaufgabe:<br>Wozu möchtest du wieder aus vollem Herzen Ja sagen? Welche Freude wartet darauf, gelebt zu werden?",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Lächle dir selbst im Spiegel ganz kurz und ehrlich zu.",
+                checkin: "Mini-Check-in:<br>• Freude-Impuls: 0–10?"
+            },
+            {
+                day: 18,
+                phase: "Phase 3: Wählen",
+                title: "Nährende Verbindungen",
+                aha: "Achte darauf, mit wem du deine Zeit teilst – manche Kontakte schenken Kraft, andere saugen sie ab.",
+                neuro: "Deine Tagesaufgabe:<br>Welcher Mensch tut dir bedingungslos gut? Wie kannst du diese Verbindung diese Woche pflegen?",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Schicke diesem Menschen eine kurze liebevolle Nachricht.",
+                checkin: "Mini-Check-in:<br>• Verbundenheit: 0–10?"
+            },
+            {
+                day: 19,
+                phase: "Phase 3: Wählen",
+                title: "Mein eigener Rhythmus",
+                aha: "Das Leben ist kein Wettrennen. Du musst nicht im Tempo anderer leben. Finde deinen eigenen Herzschlag im Alltag.",
+                neuro: "Deine Tagesaufgabe:<br>An welcher Stelle in deinem Tagesablauf kannst du Tempo herausnehmen und Entschleunigung einbauen?",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Mache eine Alltagsbewegung (z. B. Händewaschen) heute in halber Geschwindigkeit.",
+                checkin: "Mini-Check-in:<br>• Innere Entschleunigung: 0–10?"
+            },
+            {
+                day: 20,
+                phase: "Phase 3: Wählen",
+                title: "Vision für mein Zukunfts-Ich",
+                aha: "Du hast 20 Tage lang hingedacht und gefühlt. Wie sieht ein Alltag aus, in dem du dir dauerhaft treu bleibst?",
+                neuro: "Deine Tagesaufgabe:<br>Schreibe einen kurzen Brief deines Zukunfts-Ichs in 1 Jahr an dein heutiges Ich: „Danke, dass du angefangen hast...“",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Stelle dir dein Zukunfts-Ich vor, wie es frei und entspannt atmet.",
+                checkin: "Mini-Check-in:<br>• Vorfreude auf die Zukunft: 0–10?"
+            },
+            {
+                day: 21,
+                phase: "Phase 3: Wählen",
+                title: "Zurück bei mir",
+                aha: "21 Tage liegen hinter dir. Du musst dich nicht neu erfinden – du hast dich wiedergefunden. Das ist dein Neubeginn.",
+                neuro: "Deine Tagesaufgabe:<br>Was ist dein wichtigstes Versprechen an dich selbst? Vervollständige: „Ich bin... und ich darf...“",
+                action: "Wenig Kraft heute? Die kleine Variante:<br>Nimm dich selbst fest in den Arm und flüstere leise: „Ich bin angekommen.“",
+                checkin: "Mini-Check-in:<br>• Angekommen bei mir: 10 von 10 ✨"
+            }
+        ];
+const EXTRA={
+1:["Du musst heute nichts leisten. Du darfst einfach nur ankommen – so müde, so laut, so leise wie du gerade bist. Schon dass du hier bist, ist ein Zeichen von Liebe zu dir.","Gefühle zu benennen („Ich bin erschöpft“) beruhigt nachweislich die Alarmzentren im Gehirn. Die Forschung nennt das „Affect Labeling“. Ein einziges ehrliches Wort kann schon entlasten.","Ich darf so sein, wie ich bin."],
+2:["Die Stimme, die dich antreibt, wollte dich einmal schützen. Du musst sie nicht bekämpfen – du darfst ihr nur freundlich sagen: „Danke, ich übernehme jetzt.“","Wir sprechen im Schnitt viele Minuten pro Tag innerlich mit uns. Ist der Ton hart, steigt das Stresserleben. Schon das Bemerken („Aha, der Kritiker“) schafft Abstand zwischen dir und dem Gedanken.","Ich spreche mit mir wie mit einer Freundin."],
+3:["Du warst wertvoll, bevor du etwas geleistet hast. Dein Wert ist dir geschenkt – er muss nicht verdient werden.","Viele Menschen koppeln ihren Selbstwert an Leistung. Das macht ihn schwankend wie eine Wippe. Selbstmitgefühl dagegen bleibt auch an Tagen mit Fehlern stabil.","Ich bin genug – auch ohne To-do-Liste."],
+4:["Wenn du müde bist, ist das keine Schwäche, sondern eine Nachricht. Heute darfst du hinschauen, wo deine Kraft hinfließt – ohne Vorwurf.","Dauernde Erreichbarkeit, Grübelschleifen und ungeklärte Konflikte kosten Energie, auch wenn man „nichts tut“. Kleine Veränderungen, etwa feste Handy-freie Zeiten, entlasten oft mehr als große Pläne.","Meine Energie ist kostbar."],
+5:["Kein Gefühl ist falsch. Selbst die unbequemen wollen dir etwas zeigen: Hier ist etwas wichtig für dich.","Gefühle kommen wie Wellen: Sie steigen, erreichen einen Gipfel und klingen meist nach kurzer Zeit wieder ab, wenn wir sie nicht festhalten oder wegdrücken. Atmen hilft beim Durchwellen.","Alles in mir darf da sein."],
+6:["Als Kind hast du dir kluge Wege gesucht, um dich sicher zu fühlen. Du darfst heute dankbar auf sie schauen – und trotzdem neue wählen.","Schutzmuster wie Anpassen, Rückzug oder Perfektionismus entstehen oft früh und laufen automatisch. Bewusstsein ist der erste Schritt, sie zu lockern. Bei schweren Belastungen kann Begleitung durch Therapeut:innen sehr hilfreich sein.","Ich darf neue Wege gehen."],
+7:["Eine Woche mit dir selbst! Du hast dir Zeit geschenkt – das ist keine Selbstverständlichkeit. Sei stolz, auch auf die kleinen Schritte.","Neue Gewohnheiten festigen sich durch Wiederholung und Freundlichkeit, nicht durch Härte. Rückblicke helfen dem Gehirn, Erlebtes zu ordnen und Fortschritte zu sehen.","Ich sehe, was ich schon geschafft habe."],
+8:["Stell dir vor, du würdest mit dir so reden, wie du mit einem Kind sprichst, das sich verlaufen hat. Genau diese Wärme darfst du dir schenken.","Nach Kristin Neff besteht Selbstmitgefühl aus drei Teilen: Freundlichkeit mit sich selbst, das Wissen um die gemeinsame Menschlichkeit („Anderen geht es auch so“) und Achtsamkeit.","Ich bin mein eigener Freund."],
+9:["Du musst nicht glänzen, um geliebt zu werden. Gerade in deinen Ecken und Kanten liegt dein Zauber.","Perfektionismus geht häufig mit mehr Stress und Erschöpfung einher. Wer sich Fehler erlaubt, lernt in der Regel schneller und bleibt motivierter dran.","Gut genug ist wunderbar."],
+10:["Dein Körper trägt dich seit deinem ersten Atemzug. Heute darfst du ihm einfach „Danke“ sagen.","Langsames Ausatmen aktiviert den Parasympathikus, den „Ruhenerv“ deines Nervensystems. Auch Füße spüren, Hände wärmen oder ein kurzer Spaziergang können dich im Moment verankern.","Ich bin zuhause in meinem Körper."],
+11:["Es gibt Tage, die einfach schwer sind. Du bist nicht gescheitert, du bist Mensch. Heute darfst du dich selbst in den Arm nehmen.","Berührung wie eine Hand auf dem Herzen kann das Gefühl von Sicherheit stärken. Wichtig: Hält ein Tief über Wochen an, such dir bitte Unterstützung (Hausarzt, 116 117 oder Telefonseelsorge 0800 111 0 111).","Auch schwere Tage gehen vorbei."],
+12:["Pausen sind kein Luxus. Sie sind der Boden, auf dem Kraft wächst. Heute erlaubst du dir, nichts zu müssen.","Erholungspausen verbessern Konzentration und Stimmung. Schon 5 Minuten ohne Bildschirm können das Nervensystem spürbar herunterfahren.","Ich darf ausruhen."],
+13:["Trost ist keine Schwäche. Jeder Mensch braucht ihn, du auch. Heute lernst du, dir selbst ein sicherer Hafen zu sein.","Selbsttröstende Gesten (Hand aufs Herz, warmer Tee, sanfte Worte) können Stress dämpfen. Du trainierst damit, dir innere Sicherheit selbst zu geben.","Ich tröste mich liebevoll."],
+14:["Zwei Wochen voller Mut: Du hast hingeschaut, gefühlt und dich ein Stück weicher behandelt. Das verändert etwas – auch wenn man es nicht immer sofort spürt.","Veränderung verläuft selten gerade, Rückschritte gehören dazu. Wer freundlich mit sich bleibt, hält dran statt aufzugeben.","Ich wachse in meinem Tempo."],
+15:["Ein Nein ist kein Angriff. Es ist ein Zeichen von Ehrlichkeit – dir und anderen gegenüber.","Menschen, die Grenzen setzen, berichten oft von weniger Groll und mehr echten Beziehungen. Hilfreich sind kurze, freundliche Sätze ohne lange Rechtfertigung.","Mein Nein darf klar sein."],
+16:["Deine Bedürfnisse sind der Kompass zu einem Leben, das sich nach dir anfühlt. Du darfst sie ernst nehmen.","In der Psychologie gelten Sicherheit, Verbundenheit, Autonomie und Selbstwirksamkeit als Grundbedürfnisse. Unerfüllte Bedürfnisse zeigen sich oft als Gereiztheit, Rückzug oder Müdigkeit.","Meine Bedürfnisse sind wichtig."],
+17:["Ein Ja aus vollem Herzen fühlt sich leicht und warm an. Heute darfst du spüren, wofür du wirklich brennst.","Entscheidungen, die zu den eigenen Werten passen, geben meist mehr Energie. Ein Körpercheck hilft: Zieht sich etwas zusammen oder wird es weit?","Ich sage Ja zu dem, was mich nährt."],
+18:["Echte Nähe entsteht dort, wo du du selbst sein darfst. Du verdienst Menschen, bei denen du aufatmen kannst.","Gute soziale Beziehungen zählen zu den stärksten Faktoren für Wohlbefinden und seelische Gesundheit. Es geht um Qualität, nicht Menge.","Ich wähle Verbindungen, die mir guttun."],
+19:["Du musst nicht schneller, besser, weiter sein. Dein Rhythmus ist richtig, weil er deiner ist.","Jeder Mensch hat eigene Energiehochs und -tiefs. Wer seinen Tag daran ausrichtet, fühlt sich häufig weniger gehetzt.","Ich folge meinem eigenen Takt."],
+20:["Schließe die Augen und begegne der Frau, die du in einem Jahr sein möchtest. Sie lächelt dir zu und sagt: „Danke, dass du angefangen hast.“","Das bildhafte Vorstellen des zukünftigen Ichs kann Motivation und Fürsorge für sich selbst stärken. Kleine, konkrete Schritte machen Visionen lebendig.","Ich darf mir meine Zukunft schön denken."],
+21:["Du hast es geschafft! 21 Tage lang hast du dir Zeit, Aufmerksamkeit und Liebe geschenkt. Du bist angekommen, und von hier aus geht es weiter.","Kleine Rituale tragen länger als große Vorsätze. Such dir 1–2 Dinge aus diesen Tagen aus, die du in den Alltag mitnimmst, etwa drei Atemzüge am Morgen oder ein Abendsatz an dich.","Ich bin angekommen."]
+};
+
+const $=s=>document.querySelector(s),S={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}},del:k=>{try{localStorage.removeItem(k)}catch(e){}}};
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+document.querySelectorAll('.cmail,#mail').forEach(e=>{e.textContent=CONFIG.email;if(e.tagName=='A')e.href='mailto:'+CONFIG.email});
+$('#wa').href=CONFIG.whatsapp;$('#nl').href='mailto:'+CONFIG.email+'?subject=Neuigkeiten%20zum%20Selbstliebe-Tagebuch';
+$('#pay').innerHTML=CONFIG.amounts.map(a=>`<a class="btn" target="_blank" rel="noopener noreferrer" href="${CONFIG.paypal}/${a}EUR">☀ ${a} € via PayPal</a>`).join('')+`<a class="btn o" target="_blank" rel="noopener noreferrer" href="${CONFIG.paypal}">Freier Betrag</a>`;
+/* Modals */
+function openM(id,t){closeM();$('#'+id).classList.add('on');if(t)tab($('#'+id),t)}
+function closeM(){const a=$('#msgA');if(a)a.pause();document.querySelectorAll('.ov.on').forEach(o=>o.classList.remove('on'))}
+function showMsg(n){const M=(typeof NACHRICHTEN!=='undefined'&&NACHRICHTEN)||{},m=M[n]||{},nm=S.get('rz_name')||'du';$('#msgT').textContent='Tag '+n+' · Nachricht von Michaela';const t=(m.text||'Für diesen Tag hat Michaela noch keine persönliche Nachricht hinterlegt. Schau bald wieder vorbei – sie ergänzt immer wieder neue Worte für dich. ☀').replace(/\{name\}/g,nm);$('#msgB').innerHTML='<p class="imp" style="font-size:1.15rem">'+esc(t).replace(/\n/g,'<br>')+'</p>'+(m.datum?'<p class="hint">Geschrieben am '+esc(m.datum)+'</p>':'')+'<p class="serif" style="text-align:right;font-size:1.4rem">– Michaela ☀</p>';const a=$('#msgA');if(m.audio){a.src=m.audio;a.hidden=false}else{a.removeAttribute('src');a.hidden=true}openM('msg')}
+function tab(o,n){o.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t==n));o.querySelectorAll('.pane').forEach(p=>p.classList.toggle('on',p.dataset.t==n))}
+document.querySelectorAll('.ov').forEach(o=>{o.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>tab(o,b.dataset.t));o.addEventListener('click',e=>{if(e.target==o)closeM()})});
+document.addEventListener('keydown',e=>{if(e.key=='Escape')closeM()});
+/* Einwilligung */
+function loadFonts(){if(document.getElementById('gf'))return;const l=document.createElement('link');l.id='gf';l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap';document.head.appendChild(l)}
+function showCC(){let c={};try{c=JSON.parse(S.get('rz_consent')||'{}')}catch(e){}$('#ccF').checked=!!c.fonts;$('#cc').classList.add('on')}
+function saveCC(m){const f=m===true?true:m==='sel'?$('#ccF').checked:false;S.set('rz_consent',JSON.stringify({fonts:f,ts:Date.now()}));$('#cc').classList.remove('on');if(f)loadFonts();else if(document.getElementById('gf'))document.getElementById('gf').remove();setTimeout(maybeWelcome,300)}
+(function(){let c=null;try{c=JSON.parse(S.get('rz_consent'))}catch(e){}if(!c)showCC();else if(c.fonts)loadFonts()})();
+/* Tagebuch */
+const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const done=()=>{try{return JSON.parse(S.get('rz_done')||'[]')}catch(e){return[]}};
+const startD=()=>S.get('rz_start');
+function cur(){const s=startD();if(!s)return 0;return Math.floor((new Date(iso(new Date())+'T00:00:00')-new Date(s+'T00:00:00'))/864e5)+1}
+function startJourney(){const n=$('#nm').value.trim();if(n)S.set('rz_name',n);if(!startD())S.set('rz_start',iso(new Date()));go(1);document.getElementById('tage').scrollIntoView({behavior:'smooth'})}
+function go(n){S.set('rz_view',Math.min(21,Math.max(1,n)));render();$('#days').scrollIntoView({behavior:'smooth',block:'start'})}
+function render(){
+  const st=startD(),dn=done(),nm=S.get('rz_name'),v=+S.get('rz_view')||1,d=daysData[v-1],x=EXTRA[v];
+  $('#startBox').hidden=!!st;$('#prog').hidden=!st;
+  $('#greet').textContent=(nm?`Schön, dass du da bist, ${nm}. `:'Schön, dass du da bist. ')+'Ein Tag nach dem anderen – du bestimmst das Tempo. Deine Einträge bleiben nur auf deinem Gerät.';
+  if(!st){$('#days').style.display='none';return}$('#days').style.display='';
+  const dd=dn.includes(v);
+  const pad=String(v).padStart(2,'0'),M=(typeof NACHRICHTEN!=='undefined'&&NACHRICHTEN)||{},has=!!(M[v]&&M[v].text);
+  $('#days').innerHTML=`<div class="jh"><span class="ph">${esc(d.phase)}</span><span class="ph">${pad} / 21</span></div>
+  <span class="dnum" aria-hidden="true">${pad}</span><h3>${esc(d.title)}</h3><div class="orn"><i>✦</i></div>
+  <p class="imp">${d.aha}</p>
+  <button class="msgbtn" onclick="showMsg(${v})"><span class="seal">☀</span><span><b>Persönliche Nachricht von Michaela</b><small>Für Tag ${v} · tippe zum Öffnen</small></span><em>${has?'Neu':'Bald'}</em></button>
+  <div class="blk b-love"><span class="lbl">Ein Brief an dich</span>${x[0]}</div>
+  <div class="blk b-know"><span class="lbl">Gut zu wissen</span>${x[1]}</div>
+  <div class="blk b-task"><span class="lbl">Deine Tagesaufgabe</span>${d.neuro.replace(/^Deine Tagesaufgabe:<br>/,'')}</div>
+  <textarea id="n${v}" placeholder="Schreib hier einfach auf, was da ist – nur für dich …" oninput="S.set('rz_note_${v}',this.value)"></textarea>
+  <div class="blk"><span class="lbl">Wie geht es dir heute? (1 = schwer, 10 = leicht)</span><div class="mood">${[1,2,3,4,5,6,7,8,9,10].map(n=>`<button class="${(+S.get('rz_mood_'+v)||0)==n?'on':''}" onclick="setMood(${v},${n})">${n}</button>`).join('')}</div></div>
+  <div class="blk b-soft"><span class="lbl">Wenig Kraft heute?</span>${d.action.replace(/^Wenig Kraft heute\? Die kleine Variante:<br>/,'')}</div>
+  <div class="blk b-task"><span class="lbl">Mini-Check-in</span>${d.checkin.replace(/^Mini-Check-in:<br>/,'')}</div>
+  <div class="blk b-aff">„${x[2]}“</div>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><button class="btn o" onclick="showMsg(${v})">Nachricht von Michaela öffnen</button><button class="btn ${dd?'o':''}" onclick="toggle(${v})">${dd?'✓ Abgeschlossen – rückgängig':'Tag abschließen'}</button></div>
+  <div class="nav2"><button class="btn o" onclick="go(${v-1})" ${v==1?'disabled':''}>← Zurück</button><button class="btn" onclick="go(${v+1})" ${v==21?'disabled':''}>Weiter →</button></div>
+  <div class="rail">${daysData.map(e=>`<button class="rl ${e.day==v?'on':dn.includes(e.day)?'dn':''}" onclick="go(${e.day})" title="Tag ${e.day}" aria-label="Tag ${e.day}"></button>`).join('')}</div>`;
+  $('#n'+v).value=S.get('rz_note_'+v)||'';
+  const p=Math.round(dn.length/21*100);$('#pt').textContent=`${dn.length} / 21 Tagen abgeschlossen`;$('#pf').style.width=p+'%';if(dn.length==21)$('#days').insertAdjacentHTML('beforeend','<div style="text-align:center;margin-top:26px"><button class="btn" onclick="openBook()">Mein Tagebuch-Buch öffnen</button></div>');
+}
+function toggle(n){let d=done();if(d.includes(n))d=d.filter(x=>x!=n);else d.push(n);S.set('rz_done',JSON.stringify(d));render();if(d.length==21){$('#finTxt').textContent=(S.get('rz_name')||'Lieber Mensch')+', 21 Tage Zeit für dich.';openM('fin');burst()}else if(!d.includes(n)){}else if(n<21)setTimeout(()=>go(n+1),500)}
+function wipe(){if(!confirm('Alle gespeicherten Daten wirklich löschen?'))return;try{Object.keys(localStorage).filter(k=>k.startsWith('rz_')&&k!='rz_consent').forEach(k=>localStorage.removeItem(k))}catch(e){}render()}
+render();
+/* Schwebende Herzen */
+const cv=$('#hearts'),cx=cv.getContext('2d');let W,H,hs=[];
+function rs(){W=cv.width=innerWidth;H=cv.height=innerHeight}addEventListener('resize',rs);rs();
+const mk=(i)=>({x:Math.random()*W,y:i?Math.random()*H:H+20,s:Math.random()*12+8,v:Math.random()*.4+.2,o:Math.random()*.3+.12,p:Math.random()*6.28});
+
+function burst(){window.sunBurst&&sunBurst()}
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function loop(){return;if(document.hidden||RM&&hs.length>12&&0){requestAnimationFrame(loop);return}cx.clearRect(0,0,W,H);hs=hs.filter(h=>h.y>-30||hs.indexOf(h)<12);hs.forEach((h,i)=>{if(!RM){h.y-=h.v;h.p+=.015;h.x+=Math.sin(h.p)*.4}if(h.y<-30&&i<12){Object.assign(h,mk(0))}
+ cx.save();cx.translate(h.x,h.y);cx.globalAlpha=h.o;cx.fillStyle='#c28d78';const s=h.s;cx.beginPath();cx.moveTo(0,s*.3);cx.bezierCurveTo(-s*.5,-s*.3,-s,s*.2,0,s);cx.bezierCurveTo(s,s*.2,s*.5,-s*.3,0,s*.3);cx.fill();cx.restore()});requestAnimationFrame(loop)}
+loop();
+</script>
+<script>
+const L=a=>'<ul>'+a.map(x=>'<li>'+x+'</li>').join('')+'</ul>';
+const PH={
+1:{n:'01',t:'Erkennen',tage:'Tag 1–7',d:1,i:'Erkennen heißt: stehen bleiben, hinschauen und ehrlich wahrnehmen, was in dir ist – ohne Urteil und ohne Druck, sofort etwas zu ändern. Es ist der erste und wichtigste Schritt, denn nur was du bemerkst, kannst du später bewusst gestalten.',s:[
+['Worum es geht',`<p>In der ersten Woche übst du, deine <strong>Gefühle, Gedanken, Körpersignale und Muster</strong> zu bemerken. Du musst nichts lösen. Du bist wie eine neugierige Forscherin in deinem eigenen Inneren.</p><p>Viele Menschen funktionieren im Alltag so schnell, dass sie ihr Befinden erst spüren, wenn es zu viel wird. Erkennen bringt dich früher zu dir zurück.</p>`],
+['Woher Gedanken und innere Stimmen kommen',`<p>Unsere innere Stimme entsteht aus <strong>Erfahrungen, Prägungen und Beziehungen</strong>: Familie, Schule, Medien, Vergleiche. Sätze wie „Ich muss funktionieren“ oder „Ich bin nicht genug“ nennt man <strong>Glaubenssätze</strong>.</p>`+L(['Das Gehirn spart Energie und wiederholt vertraute Muster automatisch.','Der innere Kritiker will oft schützen: vor Ablehnung, Fehlern oder Enttäuschung.','Gedanken sind <strong>keine Fakten</strong>. Du kannst sie bemerken, ohne ihnen zu folgen.'])],
+['Gefühle als Wegweiser',`<p>Gefühle sind Informationen, keine Fehler:</p>`+L(['<strong>Angst</strong> – ich brauche Sicherheit oder Vorbereitung.','<strong>Wut</strong> – eine Grenze wurde verletzt oder etwas ist mir wichtig.','<strong>Trauer</strong> – etwas Bedeutsames fehlt oder geht.','<strong>Scham</strong> – ich fürchte, nicht dazuzugehören.','<strong>Erschöpfung</strong> – meine Kraft ist aufgebraucht.'])+`<p>Wer Gefühle benennt („Ich bin gerade überfordert“), beruhigt sie oft schon ein Stück. Die Psychologie nennt das <em>Affect Labeling</em>. Gefühle kommen in Wellen: Sie steigen, erreichen einen Gipfel und klingen meist wieder ab.</p>`],
+['Der Körper spricht mit',`<p>Dein Körper meldet sich oft vor deinem Kopf: Enge in der Brust, Druck im Magen, verspannte Schultern, flacher Atem. Diese Wahrnehmung heißt <strong>Interozeption</strong> und lässt sich üben.</p><p>Frage dich mehrmals am Tag: <em>Wo spüre ich gerade etwas? Wie fühlt es sich an – warm, eng, schwer, kribbelig?</em></p>`],
+['Typische Stolpersteine',L(['<strong>Selbstanalyse wird zur neuen Selbstkritik:</strong> „Warum bin ich so?“ Besser: „Was brauche ich gerade?“','<strong>Grübeln statt Erkennen:</strong> Grübeln kreist, Erkennen ist kurz, neugierig und freundlich.','<strong>Alles sofort verstehen wollen:</strong> Einsichten brauchen Zeit.','<strong>Gefühle wegschieben:</strong> Was nicht sein darf, wird oft lauter.'])],
+['Übungen für den Alltag',L(['<strong>Gefühlsradar:</strong> Morgens, mittags, abends kurz fragen: Wie geht es mir? Ein Wort genügt.','<strong>Gedanken-Etikett:</strong> Statt „Ich bin wertlos“ sagen: „Ich habe gerade den Gedanken, dass ich wertlos bin.“','<strong>Körper-Scan (2 Minuten):</strong> Von den Füßen bis zum Kopf spüren, ohne etwas zu verändern.','<strong>Ein Satz im Tagebuch:</strong> „Heute habe ich bemerkt, dass …“'])],
+['Wenn es zu viel wird',`<p>Tauchen starke Erinnerungen, Panik oder tiefe Hoffnungslosigkeit auf, ist das kein Versagen. Dann sind professionelle Begleitung (Hausarzt, Psychotherapie, Terminservice <strong>116 117</strong>) oder die Telefonseelsorge <strong>0800 111 0 111</strong> (kostenlos, rund um die Uhr) der richtige Schritt. In Notfällen: <strong>112</strong>.</p>`]]},
+2:{n:'02',t:'Annehmen',tage:'Tag 8–14',d:8,i:'Annehmen bedeutet nicht, alles gut zu finden. Es heißt, dich so zu behandeln, wie du eine geliebte Freundin behandeln würdest – gerade dann, wenn es schwer ist oder du Fehler gemacht hast.',s:[
+['Was Selbstmitgefühl ist',`<p>Die Psychologin Kristin Neff beschreibt <strong>drei Bausteine</strong>:</p>`+L(['<strong>Selbstfreundlichkeit</strong> statt harter Selbstkritik.','<strong>Gemeinsame Menschlichkeit:</strong> Leiden und Fehler gehören zum Menschsein, du bist damit nicht allein.','<strong>Achtsamkeit:</strong> Schmerz wahrnehmen, ohne ihn zu verdrängen oder zu dramatisieren.'])],
+['Kritik oder Mitgefühl – was hilft wirklich?',`<p>Viele glauben, nur Strenge motiviere. Kurzfristig kann Druck antreiben, langfristig führt er oft zu mehr Angst, Aufschieben und Erschöpfung. Studien deuten darauf hin, dass Selbstmitgefühl mit mehr emotionaler Stabilität und Lernbereitschaft zusammenhängt: Wer sich nicht fürchtet, Fehler zu machen, kann sie besser ansehen und korrigieren.</p>`],
+['Häufige Missverständnisse',L(['<strong>„Das ist Selbstmitleid.“</strong> Nein. Mitleid kreist um „Arme ich“, Mitgefühl sieht den Schmerz und bleibt handlungsfähig.','<strong>„Dann werde ich nachlässig.“</strong> Meist ist das Gegenteil der Fall.','<strong>„Das ist egoistisch.“</strong> Wer für sich sorgt, hat mehr Kraft für andere.'])],
+['Perfektionismus und die Erlaubnis zur Unperfektion',`<p>Perfektionismus ist oft der Versuch, sich vor Ablehnung zu schützen. Er geht häufig mit Stress, Selbstzweifeln und Erschöpfung einher. Die Frage „Ist es gut genug?“ ist liebevoller und realistischer als „Ist es perfekt?“.</p>`],
+['Beruhigung für Körper und Nervensystem',`<p>Sanfte Berührung (Hand aufs Herz, Arme um sich legen), warme Getränke, eine ruhige Stimme und langsames Ausatmen können Sicherheit vermitteln. Der Körper lernt: <em>Ich bin gerade nicht in Gefahr.</em> Das erleichtert Mitgefühl enorm.</p>`],
+['Übungen',L(['<strong>Selbstmitgefühls-Pause (1 Min.):</strong> „Das ist ein schwerer Moment.“ – „Leiden gehört zum Menschsein.“ – „Möge ich freundlich zu mir sein.“','<strong>Brief an dich:</strong> Schreibe, was du einer guten Freundin in deiner Lage sagen würdest. Lies ihn dir laut vor.','<strong>Trost-Kiste:</strong> Sammle fünf Dinge, die dir guttun (Lied, Tee, Spaziergang, Person, Satz).','<strong>Pausen planen:</strong> Täglich 10 Minuten ohne Aufgabe und ohne Bildschirm.'])],
+['Gut zu wissen: Wenn Freundlichkeit sich fremd anfühlt',`<p>Manche Menschen spüren zuerst Unruhe, Traurigkeit oder Widerstand, wenn sie freundlich zu sich sind. Dieses Phänomen nennt Neff <em>Backdraft</em>: Wie ein Feuer, das mit Sauerstoff aufflammt, melden sich alte Gefühle. Geh dann langsam vor und kürze die Übung. Bleibt es belastend, hilft eine Therapeutin oder ein Therapeut.</p>`]]},
+3:{n:'03',t:'Wählen',tage:'Tag 15–21',d:15,i:'Wählen heißt, aus dem Autopiloten auszusteigen. Du erkennst, was du brauchst, setzt Grenzen, sagst bewusst Ja und gestaltest dein Leben Schritt für Schritt so, dass es zu dir passt.',s:[
+['Deine Bedürfnisse',`<p>Bedürfnisse sind kein Luxus, sondern Lebensenergie. Häufig genannte Grundbedürfnisse sind <strong>Sicherheit, Zugehörigkeit, Selbstbestimmung, Kompetenz, Ruhe und Sinn</strong>. Unerfüllte Bedürfnisse zeigen sich oft als Gereiztheit, Rückzug, Müdigkeit oder Grübeln.</p><p>Wichtig ist der Unterschied zwischen <strong>Bedürfnis</strong> („Ich brauche Erholung“) und <strong>Strategie</strong> („Ich scrolle abends am Handy“). Für ein Bedürfnis gibt es viele Wege, und manche tun mehr gut als andere. Die Gewaltfreie Kommunikation nach Marshall Rosenberg arbeitet genau mit dieser Unterscheidung.</p>`],
+['Gesunde Grenzen',`<p>Grenzen sind keine Mauern, sondern Orientierung: <em>Bis hierhin ist es für mich in Ordnung.</em></p>`+L(['<strong>Zeitlich:</strong> Erreichbarkeit, Termine, Zusagen.','<strong>Emotional:</strong> Nicht für die Gefühle anderer verantwortlich sein.','<strong>Körperlich:</strong> Nähe, Berührung, Raum.','<strong>Digital:</strong> Nachrichten, Social Media, Dauer-Information.'])],
+['Nein sagen lernen',`<p>Ein klares Nein braucht keine lange Rechtfertigung. Beispiele:</p>`+L(['„Danke für die Anfrage, das schaffe ich gerade nicht.“','„Ich überlege und melde mich bis morgen.“','„Heute nicht, aber am Samstag gern.“'])+`<p>Schuldgefühle gehören anfangs dazu – sie bedeuten meist nur, dass du etwas Neues tust, nicht dass du etwas Falsches tust.</p>`],
+['Dein inneres Ja und deine Werte',`<p>Werte sind dein Kompass: Was ist dir im Kern wichtig – Ehrlichkeit, Familie, Freiheit, Kreativität, Gesundheit? Ein Ja, das zu deinen Werten passt, fühlt sich meist weit und warm an, ein Ja aus Pflicht eher eng. Frage deinen Körper: <em>Zieht sich etwas zusammen oder wird es weit?</em></p>`],
+['Nährende Verbindungen',`<p>Gute Beziehungen zählen zu den stärksten Faktoren für Wohlbefinden. Entscheidend ist die Qualität: Bei wem kannst du aufatmen, ehrlich sein und auch mal schwach sein? Wähle bewusst, wem du deine Zeit und Energie schenkst.</p>`],
+['Dein Rhythmus und dein Zukunfts-Ich',`<p>Jeder Mensch hat Energiehochs und -tiefs. Lege wichtige Dinge in deine kraftvollen Zeiten und plane Erholung fest ein. Stelle dir außerdem vor, wie du in einem Jahr leben möchtest, und wähle <strong>einen kleinen Schritt</strong> (1 Prozent), den du diese Woche gehen kannst.</p>`],
+['Übungen',L(['<strong>Bedürfnis-Check:</strong> „Was brauche ich gerade wirklich?“ – drei Mal täglich.','<strong>Nein-Baukasten:</strong> Formuliere drei Sätze für Situationen, in denen du oft Ja sagst.','<strong>Werte-Top-3:</strong> Schreibe deine drei wichtigsten Werte auf und hänge sie sichtbar auf.','<strong>Wochenplan:</strong> Plane zwei feste Zeitfenster nur für dich.'])],
+['Gut zu wissen',`<p>Rückfälle in alte Muster sind normal und kein Scheitern. Wenn Grenzen zu starken Konflikten führen oder du dich in einer Beziehung bedroht oder abgewertet fühlst, such dir Unterstützung: Hilfetelefon „Gewalt gegen Frauen“ <strong>116 016</strong> (kostenlos, anonym, rund um die Uhr).</p>`]]}
+};
+function openPhase(k){const p=PH[k];$('#phT').textContent=p.n+' · '+p.t;$('#phS').textContent=p.tage;$('#phTabs').innerHTML=p.s.map((s,i)=>`<button onclick="document.getElementById('ps${i}').scrollIntoView({behavior:'smooth',block:'start'})">${s[0]}</button>`).join('');$('#phB').innerHTML=`<p class="imp" style="text-align:left">${p.i}</p>`+p.s.map((s,i)=>`<div class="phsec" id="ps${i}"><h4>${s[0]}</h4>${s[1]}</div>`).join('')+`<p class="hint">Diese Informationen dienen der Orientierung und ersetzen keine ärztliche oder psychotherapeutische Behandlung.</p><div style="text-align:center;margin-top:20px"><button class="btn" onclick="startPhase(${k})">Mit Tag ${p.d} beginnen</button></div>`;$('#phBody').scrollTop=0;openM('phase')}
+function startPhase(k){closeM();if(startD())go(PH[k].d);else $('#tage').scrollIntoView({behavior:'smooth'})}
+</script>
+<script>
+const REFL={
+1:"Du hast dir heute zum ersten Mal wirklich zugehört, {name}. Das ist der Anfang von allem. Ich bin stolz auf deinen Mut, ehrlich hinzuschauen.",
+2:"Die leise und die laute Stimme in dir dürfen nebeneinander sein. Du hast heute gelernt, ihnen zuzuhören, ohne ihnen zu gehorchen. Das ist echte Freiheit.",
+3:"Du bist so viel mehr als das, was du leistest. Trag diesen Gedanken mit dir, {name}: Du warst schon immer wertvoll – einfach, weil du da bist.",
+4:"Dass du erkennst, wo deine Kraft hinfließt, ist ein Geschenk an dich. Du darfst sie zurückholen, Schritt für Schritt, in deinem Tempo.",
+5:"Jedes Gefühl, das du heute da sein ließest, hat ein Stück Last von deinen Schultern genommen. Danke, dass du dir das erlaubt hast.",
+6:"Deine alten Schutzmuster haben dich getragen, als du es brauchtest. Heute darfst du ihnen danken und neue Wege wählen. Du bist nicht mehr klein und ausgeliefert.",
+7:"Eine ganze Woche voller Ehrlichkeit liegt hinter dir. Spür einmal nach, wie viel du über dich gelernt hast. Ich ziehe den Hut vor dir.",
+8:"Mit dieser Sanftheit, die du heute einem Freund schenken würdest, darfst du auch dir begegnen. Du hast sie dir verdient, {name}.",
+9:"Unperfekt ist wunderbar menschlich. Du hast heute geübt, gut genug zu sein, und genau darin liegt so viel Erleichterung.",
+10:"Dein Körper trägt dich durch jeden Tag. Dass du ihm heute gedankt hast, verbindet dich wieder mit deinem Zuhause.",
+11:"Schwere Tage gehören zum Leben. Dass du dich in ihnen nicht verlassen hast, zeigt, wie weit du schon gekommen bist.",
+12:"Du hast dir eine Pause erlaubt, ohne sie zu rechtfertigen. Das ist keine Faulheit, sondern Selbstachtung, und sie steht dir gut.",
+13:"Trost anzunehmen heißt, sich selbst ernst zu nehmen. Du durftest heute dein eigener sicherer Hafen sein. Behalte das Gefühl.",
+14:"Zwei Wochen mit dir selbst! Du hast hingeschaut, gefühlt und dich weicher behandelt. Was du jetzt in dir trägst, kann dir keiner mehr nehmen.",
+15:"Dein klares Nein war heute ein Ja zu dir selbst. Das fühlt sich anfangs ungewohnt an, wird aber mit jedem Mal natürlicher.",
+16:"Du hast benannt, was du wirklich brauchst. Das ist der Kompass, der dich künftig führt, {name}. Vertrau ihm.",
+17:"Wenn dein Ja aus dem Herzen kommt, trägt es dich weit. Ich freue mich, dass du heute gespürt hast, was dich nährt.",
+18:"Du darfst dir Menschen wählen, bei denen du aufatmen kannst. Und du darfst dir selbst die Person sein, bei der du zuerst aufatmest.",
+19:"Dein Rhythmus ist richtig, weil er deiner ist. Niemand muss ihn verstehen, nur du musst ihn achten.",
+20:"Die Frau, die du in einem Jahr sein möchtest, lächelt dir schon zu. Sie ist stolz auf jeden Schritt, den du heute gegangen bist.",
+21:"Du bist angekommen, {name}. Nicht als neue Person, sondern als die, die du immer warst. Ich umarme dich von Herzen."
+};
+const CHAP={1:['Erkennen','In diesen sieben Tagen hast du innegehalten und hingeschaut. Nichts musste gelöst werden. Du hast gesehen, was da ist – und das war schon sehr viel.'],8:['Annehmen','Jetzt wurde es weich. Du hast geübt, dir selbst ein guter Freund zu sein, auch an den schweren Tagen und mit allen Ecken und Kanten.'],15:['Wählen','Im dritten Kapitel hast du dir erlaubt, zu wählen: deine Bedürfnisse, deine Grenzen, dein Ja und dein Nein. Du hast die Zügel wieder selbst in der Hand.']};
+function openBook(){
+const nm=S.get('rz_name')||'du',st=startD()||iso(new Date()),fmt=d=>d.toLocaleDateString('de-DE',{day:'numeric',month:'long',year:'numeric'}),s0=new Date(st+'T00:00:00');
+let words=0,best=0,bd=1,filled=0;const ent={};
+daysData.forEach(d=>{const t=(S.get('rz_note_'+d.day)||'').trim();ent[d.day]=t;if(t){filled++;const w=t.split(/\s+/).length;words+=w;if(w>best){best=w;bd=d.day}}});
+const days=daysData.map(d=>{const v=d.day,t=ent[v],x=EXTRA[v],pad=String(v).padStart(2,'0'),dt=fmt(new Date(s0.getTime()+(v-1)*864e5));
+const echo=t?((t.length>280?'Wie ehrlich und tief du hier geschrieben hast, berührt mich. ':'Schon wenige Worte tragen Wahrheit. ')+REFL[v]):REFL[v];
+return (CHAP[v]?`<div class="bk-ph"><small>Kapitel</small><h2>${CHAP[v][0]}</h2><p>${CHAP[v][1]}</p></div>`:'')+`<div class="bk-ch"><div class="bk-n">${pad}</div><h3>${esc(d.title)}</h3><small>${dt}</small><p class="bk-l">${x[0]}</p><span class="bk-t">Das hast du aufgeschrieben</span><blockquote>${t?esc(t).replace(/\n/g,'<br>'):'<i>Diese Seite blieb leer. Auch das ist erlaubt – du warst bei dir, und das genügt.</i>'}</blockquote><p class="bk-i"><b>Michaelas Gedanke dazu</b><br>${esc(echo).replace(/\{name\}/g,esc(nm))}</p><p class="bk-a">„${x[2]}“</p></div>`+(v%7==0?wk(v/7):'')}).join('');
+$('#bookB').innerHTML=`<div class="bk">
+<div class="bk-cover"><small>Seelenfrieden</small><h1>Die Welt<br>in dir</h1><div class="orn"><i>✦</i></div><p>Das Seelenfrieden-Tagebuch</p><p class="bk-nm">von ${nm==='du'?'dir':esc(nm)}</p><small>${fmt(s0)} – ${fmt(new Date(s0.getTime()+20*864e5))}</small><small style="margin-top:34px">Begleitet von Michaela Schäfer</small></div>
+<div class="bk-pre"><h2>Ein Wort vorab</h2><p>Liebe${nm==='du'?'':' '+esc(nm)},</p><p>21 Tage lang hast du dir Zeit geschenkt, und das ist nicht selbstverständlich. Auf diesen Seiten findest du deine eigenen Worte, so wie du sie aufgeschrieben hast, und dazwischen meine Gedanken, die dich begleiten.</p><p>Lies dieses Buch nicht als Beurteilung, sondern als Beweis: Du kannst dich selbst ernst nehmen, du kannst freundlich mit dir sein, und du kannst dich wiederfinden. Blättere, wann immer du magst, an den leichten und an den schweren Tagen.</p><p class="bk-s">Von Herzen, Michaela</p></div>
+${days}${moodSec()}
+<div class="bk-end"><h2>Dein Abschlussbrief</h2><p>Liebe${nm==='du'?'':' '+esc(nm)},</p><p>Du hast in diesen 21 Tagen <strong>${filled} Seiten</strong> mit insgesamt etwa <strong>${words} Wörtern</strong> beschrieben. ${filled?`Besonders viel Raum hast du dir an <strong>Tag ${bd} („${esc(daysData[bd-1].title)}“)</strong> genommen – dort scheint dir etwas besonders wichtig gewesen zu sein.`:'Auch wenn die Seiten leer geblieben sind: Du bist den Weg mit dir gegangen, und das zählt.'}</p><p>Du musst dich nicht neu erfinden. Du hast dich wiedergefunden. Nimm dieses Buch mit in deinen Alltag und lies es, wenn du dich vergisst. Und wenn du magst, beginne irgendwann wieder bei Tag 1.</p><p class="bk-s">In Liebe, Michaela Schäfer</p><div class="bk-lines"><span>Mein Versprechen an mich:</span></div></div></div>`;
+$('#bookB').scrollTop=0;openM('book')}
+</script>
+<script>
+const note=v=>(S.get('rz_note_'+v)||'').trim(),mood=v=>+S.get('rz_mood_'+v)||0,p2=n=>String(n).padStart(2,'0');
+function setMood(d,n){S.set('rz_mood_'+d,n);render()}
+function dl(name,type,txt){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([txt],{type}));a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)}
+function exportData(){const o={};try{Object.keys(localStorage).filter(k=>k.startsWith('rz_')&&k!='rz_consent').forEach(k=>o[k]=localStorage.getItem(k))}catch(e){}dl('seelenfrieden-sicherung-'+iso(new Date())+'.json','application/json',JSON.stringify({app:'seelenfrieden',v:1,data:o},null,1))}
+function importData(f){if(!f)return;const r=new FileReader();r.onload=()=>{try{const j=JSON.parse(r.result),d=j.data;if(j.app!='seelenfrieden'||!d)throw 0;if(!confirm('Vorhandene Einträge auf diesem Gerät werden durch die Sicherung ersetzt. Fortfahren?'))return;Object.keys(d).forEach(k=>{if(/^rz_(note_\d+|th_\d+|mt_\d+|sc_\d+|mood_\d+|done|start|name|view)$/.test(k)&&typeof d[k]=='string')S.set(k,d[k])});render();alert('Deine Einträge wurden wiederhergestellt ☀')}catch(e){alert('Diese Datei ist keine gültige Sicherung.')}};r.readAsText(f)}
+function makeICS(){const t=($('#icsT').value||'08:00').split(':'),s=startD()||iso(new Date()),f=d=>d.getFullYear()+p2(d.getMonth()+1)+p2(d.getDate())+'T'+p2(d.getHours())+p2(d.getMinutes())+'00',E=x=>x.replace(/<br>/g,' ').replace(/<[^>]+>/g,'').replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,').replace(/\n/g,'\\n'),F=l=>l.match(/.{1,70}/g).join('\r\n '),st=new Date().toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
+let c=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Seelenfrieden//DE','CALSCALE:GREGORIAN'];
+daysData.forEach(d=>{const a=new Date(s+'T00:00:00');a.setDate(a.getDate()+d.day-1);a.setHours(+t[0],+t[1]);const e=new Date(a.getTime()+9e5);c.push('BEGIN:VEVENT','UID:rz-'+d.day+'-'+s+'@seelenfrieden',F('SUMMARY:'+E('Seelenfrieden · Tag '+d.day+' – '+d.title)),'DTSTAMP:'+st,'DTSTART:'+f(a),'DTEND:'+f(e),F('DESCRIPTION:'+E(d.aha+' ✍ '+d.neuro.replace(/^Deine Tagesaufgabe:<br>/,''))),'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:Dein Moment für dich','TRIGGER:PT0M','END:VALARM','END:VEVENT')});
+c.push('END:VCALENDAR');dl('seelenfrieden-21-tage.ics','text/calendar',c.join('\r\n'))}
+let dip=null;addEventListener('beforeinstallprompt',e=>{e.preventDefault();dip=e;$('#inst').hidden=false});
+function installApp(){if(dip){dip.prompt();dip=null;$('#inst').hidden=true}}
+try{if('serviceWorker' in navigator&&/^https?:/.test(location.protocol))navigator.serviceWorker.register('sw.js').catch(()=>{})}catch(e){}
+function wk(w){const q=[];let sm=0,sc=0;for(let v=(w-1)*7+1;v<=w*7;v++){note(v).split(/(?<=[.!?])\s+/).forEach(s=>{if(s.length>=25&&s.length<=170)q.push(s)});const m=mood(v);if(m){sm+=m;sc++}}
+q.sort((a,b)=>b.length-a.length);const top=q.slice(0,3);
+return `<div class="bk-wk"><h2>Wochenrückblick · ${['Erkennen','Annehmen','Wählen'][w-1]}</h2>${top.length?'<p>Deine schönsten Sätze dieser Woche:</p>'+top.map(s=>`<blockquote>${esc(s)}</blockquote>`).join(''):'<p>Diese Woche blieb leise – auch das ist Weg.</p>'}${sc?`<p>Deine Stimmung lag im Schnitt bei <strong>${(sm/sc).toFixed(1)}</strong> von 10.</p>`:''}<p class="bk-s">Ich bin stolz auf dich – Michaela</p></div>`}
+function moodSec(){const pts=[];for(let v=1;v<=21;v++){const m=mood(v);if(m)pts.push([v,m])}if(pts.length<2)return '';
+const X=v=>30+(v-1)*29,Y=m=>170-(m-1)*140/9,av=(a,b)=>{const q=pts.filter(p=>p[0]>=a&&p[0]<=b);return q.length?q.reduce((s,p)=>s+p[1],0)/q.length:0},a1=av(1,7),a3=av(15,21);
+return `<div class="bk-wk"><h2>Dein Weg</h2><svg viewBox="0 0 640 210" style="width:100%;height:auto" role="img" aria-label="Stimmungsverlauf">${[1,5,10].map(m=>`<line x1="30" x2="610" y1="${Y(m)}" y2="${Y(m)}" stroke="#c28d78" stroke-opacity=".25"/><text x="6" y="${Y(m)+4}" font-size="11" fill="#a97561">${m}</text>`).join('')}<polyline fill="none" stroke="#c28d78" stroke-width="2.5" stroke-linejoin="round" points="${pts.map(p=>X(p[0])+','+Y(p[1])).join(' ')}"/>${pts.map(p=>`<circle cx="${X(p[0])}" cy="${Y(p[1])}" r="4.5" fill="#fffaf4" stroke="#a97561" stroke-width="2"/>`).join('')}${[1,7,14,21].map(v=>`<text x="${X(v)}" y="198" font-size="11" text-anchor="middle" fill="#a97561">Tag ${v}</text>`).join('')}</svg><p>${a1&&a3?`In der ersten Woche lag deine Stimmung im Schnitt bei ${a1.toFixed(1)}, in der letzten bei ${a3.toFixed(1)}. `:''}Jeder Punkt ist ein Tag, an dem du dich gefragt hast, wie es dir wirklich geht.</p></div>`}
+(function(){const n=CONFIG.newsletter||{};if(n.action){$('#nlBox').innerHTML=`<form action="${esc(n.action)}" method="post" target="_blank" rel="noopener" style="max-width:480px;margin:auto;text-align:left"><input type="email" name="${esc(n.emailField||'EMAIL')}" required placeholder="Deine E-Mail-Adresse" style="width:100%;padding:14px 18px;border:1px solid var(--line);border-radius:30px;margin-bottom:10px"><label style="font-size:.8rem;display:block;margin-bottom:12px"><input type="checkbox" required> Ich möchte den Newsletter von Michaela Schäfer erhalten und habe die <a href="#" onclick="openM('legal','dat');return false">Datenschutzerklärung</a> gelesen. Abmeldung jederzeit möglich.</label><div style="text-align:center"><button class="btn" type="submit">Newsletter abonnieren</button></div><p class="hint" style="margin-top:12px">Du bekommst zuerst eine Bestätigungs-E-Mail (Double-Opt-in).</p></form>`}
+const P=(CONFIG.premium||[]).filter(x=>x.link);if(P.length){const s=$('#premium');s.hidden=false;$('#premList').innerHTML=P.map(x=>`<div class="card" style="text-align:center;margin:0"><h3 class="serif" style="font-size:1.7rem">${esc(x.titel)}</h3><p style="color:var(--light-brown);margin:8px 0 14px">${esc(x.text)}</p><a class="btn" target="_blank" rel="noopener noreferrer" href="${esc(x.link)}">${esc(x.preis)} · via PayPal</a></div>`).join('')}})();
+</script>
+<script>
+const STEPS=[
+['Ankommen','Wähle einen ruhigen Ort und eine feste Zeit – 10 bis 15 Minuten am Tag genügen. Mit dem Atem-Moment (unten links) kommst du in einer Minute bei dir an. Eine tägliche Kalender-Erinnerung kannst du dir unter dem Tagebuch anlegen.'],
+['Deine Reise starten','Gib optional deinen Vornamen ein und tippe auf „Ja, ich starte jetzt“. Tag 1 öffnet sich. Du kannst jederzeit vor- und zurückblättern – ideal ist ein Tag pro Tag, aber du bestimmst das Tempo.'],
+['Lesen und schreiben','Jeder Tag bringt dir einen Impuls, einen Brief von Michaela, Wissen zum Thema und eine Tagesaufgabe. Schreibe in das Notizfeld, was da ist. Es gibt kein Richtig oder Falsch. Alles wird sofort gespeichert – nur auf deinem Gerät.'],
+['Nachspüren','Gib deine Stimmung von 1 bis 10 an und beantworte den Mini-Check-in. Fehlt dir die Kraft, genügt die kleine Variante. Öffne die persönliche Nachricht von Michaela – sie schreibt dir immer wieder neue Worte.'],
+['Wissen vertiefen','Im Bereich „Gefühle & Wissen“ entdeckst du den Gefühlskompass und die Bibliothek. Die drei Phasen-Karten erklären, worum es in Erkennen, Annehmen und Wählen geht.'],
+['Sichern und vollenden','Sichere deine Einträge regelmäßig als Datei, damit nichts verloren geht. Nach Tag 21 entsteht aus allem dein persönliches Tagebuch-Buch, das du als PDF speichern kannst.']];
+const wl=STEPS.map(s=>`<li><b>${s[0]}</b><span>${s[1]}</span></li>`).join('');$('#wSteps').innerHTML=wl;$('#wSteps2').innerHTML=wl;
+function maybeWelcome(){if(S.get('rz_welcome')||$('#cc').classList.contains('on')||document.querySelector('.ov.on'))return;S.set('rz_welcome','1');openM('welcome')}
+setTimeout(maybeWelcome,700);
+const GEF=[
+{n:'Freude',c:'#c9a24d',f:['Dankbarkeit','Stolz','Zufriedenheit','Leichtigkeit','Begeisterung','Geborgenheit'],s:'Etwas ist gut für dich oder passt zu deinen Werten. Du bist im Einklang mit dir.',b:'Verbundenheit, Sinn, Lebendigkeit.',k:'Genieße bewusst, teile sie mit jemandem und halte kurz inne, um den Moment zu speichern.',x:'Weite im Brustraum, Wärme, ein leichtes Lächeln.'},
+{n:'Traurigkeit',c:'#6f8ea6',f:['Enttäuschung','Einsamkeit','Wehmut','Trauer','Hilflosigkeit','Schwere'],s:'Etwas Wertvolles fehlt oder geht. Traurigkeit zeigt, was dir wichtig war.',b:'Trost, Nähe, Zeit zum Abschiednehmen.',k:'Tränen zulassen, jemandem davon erzählen, sanfte Bewegung, eine warme Decke.',x:'Schwere, Kloß im Hals, Müdigkeit, nasse Augen.'},
+{n:'Wut',c:'#b5594b',f:['Ärger','Gereiztheit','Frust','Empörung','Ohnmacht','Groll'],s:'Eine Grenze wurde verletzt oder etwas Wichtiges ist bedroht. Wut gibt Energie zur Veränderung.',b:'Respekt, Klarheit, Selbstbestimmung.',k:'Bewegung, erst atmen, dann reagieren, die Grenze ruhig und klar aussprechen.',x:'Hitze, Anspannung in Kiefer und Händen, schneller Puls.'},
+{n:'Angst',c:'#7d6a9a',f:['Sorge','Unsicherheit','Nervosität','Panik','Überforderung','Verletzlichkeit'],s:'Dein System meldet mögliche Gefahr oder Unsicherheit und will dich schützen.',b:'Sicherheit, Information, Halt.',k:'Länger aus- als einatmen, Fakten von Gedanken trennen, den nächsten kleinen Schritt planen.',x:'Herzklopfen, flacher Atem, Enge, Magenkribbeln.'},
+{n:'Scham',c:'#b07a8e',f:['Peinlichkeit','Verlegenheit','Minderwertigkeit','Unzulänglichkeit','Schuld','Rückzug'],s:'Du fürchtest, nicht dazuzugehören oder eigene Werte verletzt zu haben.',b:'Zugehörigkeit, Annahme, Verzeihen.',k:'Mit einer vertrauten Person sprechen, die Selbstmitgefühls-Pause üben, Fehler als menschlich sehen.',x:'Hitze im Gesicht, gesenkter Blick, Zusammensinken.'},
+{n:'Verbundenheit',c:'#c28d78',f:['Zuneigung','Vertrauen','Nähe','Mitgefühl','Sehnsucht','Zärtlichkeit'],s:'Du fühlst dich mit jemandem oder etwas verbunden und gesehen.',b:'Nähe, Gesehenwerden, Austausch.',k:'Ausdrücken, Zeit schenken, auch dir selbst Zuwendung geben.',x:'Wärme, ein weicher Brustraum, ruhiger Atem.'},
+{n:'Erschöpfung',c:'#8a8f87',f:['Ausgelaugtheit','Leere','Antriebslosigkeit','Überlastung','Reizbarkeit','Abgestumpftheit'],s:'Deine Kraftreserven sind aufgebraucht. Dein Körper bittet um Pause.',b:'Ruhe, Schlaf, Entlastung.',k:'Aufgaben streichen, Hilfe annehmen, früh schlafen. Hält sie über Wochen an, bitte ärztlich abklären lassen.',x:'Schwere Glieder, Nebel im Kopf, Verspannung.'}];
+$('#gChips').innerHTML=GEF.map((g,i)=>`<button class="chip" style="--c:${g.c}" aria-pressed="false" onclick="gef(${i})">${g.n}</button>`).join('');
+function gef(i){const g=GEF[i];document.querySelectorAll('.chip').forEach((c,j)=>c.setAttribute('aria-pressed',j==i));$('#gCard').innerHTML=`<h3 class="serif" style="font-size:2.1rem;color:${g.c}">${g.n}</h3><div class="pills">${g.f.map(x=>`<span>${x}</span>`).join('')}</div><dl><dt>Was es dir sagt</dt><dd>${g.s}</dd><dt>Was du brauchst</dt><dd>${g.b}</dd><dt>Was jetzt helfen kann</dt><dd>${g.k}</dd><dt>Wo du es im Körper spürst</dt><dd>${g.x}</dd></dl>`}
+gef(0);
+const LIB=[
+['Warum 21 Tage – und was die Forschung sagt','Eine bekannte Studie (Lally u. a., 2009) fand, dass neue Gewohnheiten im Durchschnitt rund 66 Tage brauchten, mit großer Spannweite von Person zu Person. Die „21 Tage“ sind also ein guter, machbarer Start – kein Zieltermin. Mach dir keinen Druck: Dranbleiben zählt mehr als Perfektion.'],
+['Dein Gehirn kann dazulernen','Das Gehirn bleibt ein Leben lang formbar (Neuroplastizität). Was du oft wiederholst, wird vertrauter und leichter. Kleine tägliche Übungen, zum Beispiel ein freundlicher Satz an dich selbst, können mit der Zeit zu neuen inneren Gewohnheiten werden.'],
+['Bindung und innere Sicherheit','Frühe Beziehungserfahrungen prägen, wie sicher wir uns in Nähe fühlen. Bindungsmuster sind keine Schublade: Verlässliche Beziehungen, Selbstfürsorge und gegebenenfalls Therapie können zu „erarbeiteter Sicherheit“ führen. Du kannst dir heute selbst geben, was dir damals gefehlt hat.'],
+['Gefühle regulieren in drei Schritten','1. Wahrnehmen: Was fühle ich? 2. Benennen: „Das ist Angst.“ 3. Regulieren: atmen, bewegen, sprechen, Abstand nehmen. Gefühle dauerhaft zu unterdrücken erhöht oft die innere Anspannung. Annehmen und freundlich begleiten wirkt meist nachhaltiger.'],
+['Resilienz – seelische Widerstandskraft','Resilienz entsteht aus tragfähigen Beziehungen, dem Gefühl, etwas bewirken zu können, Akzeptanz des Unveränderlichen und einem realistischen, hoffnungsvollen Blick. Sie ist kein Talent, sondern lässt sich Schritt für Schritt stärken.'],
+['Warum Rückschläge dazugehören','Entwicklung verläuft in Wellen, nicht in einer geraden Linie. Ein schwerer Tag macht deine Fortschritte nicht ungeschehen. Wer nach einem Rückschlag freundlich mit sich bleibt, macht eher weiter, als wer sich verurteilt.'],
+['Schlaf, Bewegung und Natur','Dein Körper ist die Basis deiner Stimmung. Regelmäßiger Schlaf, ein Spaziergang von 10 bis 20 Minuten an der frischen Luft und ausreichend Trinken unterstützen das Wohlbefinden. Das ersetzt keine Behandlung, ist aber eine freundliche Grundlage.'],
+['Wann professionelle Hilfe sinnvoll ist','Wenn Niedergeschlagenheit, Angst oder Leere länger als etwa zwei Wochen anhalten, du kaum noch schläfst oder isst oder an Selbstverletzung denkst: Such dir bitte Unterstützung. Hausarzt, Psychotherapie (Terminservice 116 117) und die Telefonseelsorge 0800 111 0 111 sind für dich da. Im Notfall: 112.']];
+$('#lib').innerHTML=LIB.map(a=>`<details><summary>${a[0]}</summary><p>${a[1]}</p></details>`).join('');
+let bt;function openBreath(){openM('breath');let t=0;const e=$('#bTxt');clearInterval(bt);const f=()=>{if(!$('#breath').classList.contains('on')){clearInterval(bt);return}t=t%10;e.textContent=(t<4?'Einatmen … ':'Ausatmen … ')+(t<4?4-t:10-t);t++};f();bt=setInterval(f,1000)}
+function shareSite(){const d={title:'Seelenfrieden · Die Welt in dir',text:'Das Seelenfrieden-Tagebuch von Michaela Schäfer',url:location.href};if(navigator.share)navigator.share(d).catch(()=>{});else if(navigator.clipboard)navigator.clipboard.writeText(d.url).then(()=>alert('Link kopiert ☀'))}
+addEventListener('keydown',e=>{const a=document.activeElement.tagName;if(a=='TEXTAREA'||a=='INPUT'||document.querySelector('.ov.on')||!startD())return;const v=+S.get('rz_view')||1;if(e.key=='ArrowRight')go(v+1);if(e.key=='ArrowLeft')go(v-1)});
+
+const I18N={days:{"de": [{"day": 1, "phase": "Phase 1: Erkennen", "title": "Ankommen im Lärm", "aha": "Die Welt ist laut geworden. Heute hörst du nur hin: Wie laut ist es in dir wirklich?", "neuro": "Deine Tagesaufgabe:<br>Setze dich 5 Minuten hin und schreibe auf, was in deinem Kopf gerade durcheinanderredet. Ungefiltert.", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 2, "phase": "Phase 1: Erkennen", "title": "Die Welt in deinem Kopf", "aha": "Du erlebst nie die Welt selbst – nur das Bild, das dein Denken von ihr malt. Ändert sich das Bild, ändert sich deine Welt.", "neuro": "Deine Tagesaufgabe:<br>Denke an etwas, das dich gerade belastet. Schreibe zwei Sätze: Was ist passiert? Und: Was habe ich mir dazu gedacht?", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 3, "phase": "Phase 1: Erkennen", "title": "Gedanken über Gedanken", "aha": "Du kannst deine Gedanken beobachten. Genau das – dass du es kannst – ist die grenzenlose Gabe, um die es in diesen 21 Tagen geht.", "neuro": "Deine Tagesaufgabe:<br>Beobachte heute dreimal einen Gedanken und sage innerlich: „Aha, ein Gedanke.“ Notiere, welcher es war.", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 4, "phase": "Phase 1: Erkennen", "title": "Das Dauerrauschen", "aha": "Nachrichten, Push-Meldungen, Meinungen, Vergleiche: Dein Kopf bekommt täglich mehr, als er verdauen kann.", "neuro": "Deine Tagesaufgabe:<br>Notiere, welche drei Quellen dir heute am meisten Unruhe bringen. Und welche eine du für 24 Stunden pausieren könntest.", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 5, "phase": "Phase 1: Erkennen", "title": "Vergleichen kostet Frieden", "aha": "Du vergleichst dein Innen mit dem Außen anderer. Das ist ein Wettlauf, den niemand gewinnt.", "neuro": "Deine Tagesaufgabe:<br>Schreibe auf, mit wem du dich oft vergleichst – und was du dir eigentlich davon wünschst.", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 6, "phase": "Phase 1: Erkennen", "title": "Der Körper weiß es zuerst", "aha": "Bevor du etwas denkst, hat dein Körper schon reagiert. Er ist dein ehrlichstes Frühwarnsystem.", "neuro": "Deine Tagesaufgabe:<br>Spüre dreimal heute in den Körper: Wo sitzt Anspannung? Atme dorthin und schreibe ein Wort dazu.", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 7, "phase": "Phase 1: Erkennen", "title": "Was wirklich zählt", "aha": "Am Ende der ersten Woche darfst du sortieren: Was gehört wirklich zu deinem Leben – und was hast du nur mitgeschleppt?", "neuro": "Deine Tagesaufgabe:<br>Schreibe drei Dinge auf, die dir wirklich wichtig sind, und eins, das du loslassen möchtest.", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 8, "phase": "Phase 2: Annehmen", "title": "Du bist nicht dein Gedanke", "aha": "„Ich bin wertlos“ ist ein Gedanke, kein Urteil über dich. Gedanken kommen und gehen wie Wolken – du bist der Himmel.", "neuro": "Deine Tagesaufgabe:<br>Schreibe einen quälenden Gedanken auf und setze davor: „Ich habe den Gedanken, dass …“ Wie fühlt sich das an?", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 9, "phase": "Phase 2: Annehmen", "title": "Alte Geschichten", "aha": "Viele Sätze in dir sind alt – von früher, von anderen. Du trägst sie wie einen Rucksack, der nie gepackt wurde.", "neuro": "Deine Tagesaufgabe:<br>Welchen alten Satz glaubst du über dich? Von wem könnte er stammen? Würdest du ihn einem Kind sagen?", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 10, "phase": "Phase 2: Annehmen", "title": "Frieden mit dem Unveränderlichen", "aha": "Ein großer Teil deines Unfriedens kommt vom Kämpfen gegen das, was schon ist.", "neuro": "Deine Tagesaufgabe:<br>Teile ein Blatt in zwei Spalten: „Kann ich ändern“ und „Kann ich nicht ändern“. Trage alles ein, was dich beschäftigt.", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 11, "phase": "Phase 2: Annehmen", "title": "Vergeben, ohne zu vergessen", "aha": "Groll ist Gift, das du trinkst, in der Hoffnung, der andere werde krank. Vergeben ist ein Geschenk an dich.", "neuro": "Deine Tagesaufgabe:<br>Schreibe einen Brief, den du nicht abschickst – an jemanden, bei dem noch etwas offen ist. Oder an dich selbst.", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 12, "phase": "Phase 2: Annehmen", "title": "Dein innerer Freund", "aha": "Wie sprichst du mit dir, wenn du etwas falsch gemacht hast? Heute wirst du dein eigener Freund.", "neuro": "Deine Tagesaufgabe:<br>Erinnere dich an einen Fehler. Schreibe auf, was du einem guten Freund dazu sagen würdest – und lies es dir selbst vor.", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 13, "phase": "Phase 2: Annehmen", "title": "Die Kunst, nichts zu tun", "aha": "Du bist kein Projekt, das optimiert werden muss. Pausen sind keine verlorene Zeit, sondern Heimkehr.", "neuro": "Deine Tagesaufgabe:<br>Plane heute 15 Minuten ohne Handy, ohne Ziel. Setze dich ans Fenster. Schreibe danach auf, was aufgetaucht ist.", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 14, "phase": "Phase 2: Annehmen", "title": "Nähe und Einsamkeit", "aha": "Man kann mitten unter Menschen einsam sein – und allein ganz verbunden. Verbundenheit beginnt bei dir.", "neuro": "Deine Tagesaufgabe:<br>Wem möchtest du heute eine ehrliche, warme Nachricht schicken? Schreibe sie – und schicke sie, wenn es sich gut anfühlt.", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 15, "phase": "Phase 3: Wählen", "title": "Die Gabe der Wahl", "aha": "Du kannst nicht kontrollieren, welche Gedanken kommen – aber du kannst wählen, welchen du folgst.", "neuro": "Deine Tagesaufgabe:<br>Nimm einen belastenden Gedanken und formuliere ihn in einen Satz um, der wahr bleibt, aber dir mehr Raum gibt.", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 16, "phase": "Phase 3: Wählen", "title": "Neue Gedanken säen", "aha": "Dein Geist ist ein Garten. Was du täglich gießt, wächst. Das gilt für Sorgen und für Vertrauen.", "neuro": "Deine Tagesaufgabe:<br>Wähle einen Satz, den du die nächsten Tage täglich liest. Schreibe ihn auf einen Zettel und stelle ihn sichtbar auf.", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 17, "phase": "Phase 3: Wählen", "title": "Grenzen als Liebe", "aha": "Ein klares Nein ist oft das ehrlichste Ja zu dir. Grenzen schützen deinen Frieden und deine Beziehungen.", "neuro": "Deine Tagesaufgabe:<br>Wo sagst du Ja und meinst Nein? Schreibe eine Situation auf und formuliere ein freundliches, klares Nein.", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 18, "phase": "Phase 3: Wählen", "title": "Digitale Stille", "aha": "Dein Handy ist ein wunderbares Werkzeug und ein schlechter Herr. Heute holst du dir Stille zurück.", "neuro": "Deine Tagesaufgabe:<br>Lege dein Handy für zwei Stunden weg. Schreibe auf, was du bemerkt hast, als der Impuls zum Greifen kam.", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 19, "phase": "Phase 3: Wählen", "title": "Dankbarkeit als Muskel", "aha": "Dankbarkeit leugnet das Schwere nicht. Sie richtet nur den Blick auch auf das, was trägt.", "neuro": "Deine Tagesaufgabe:<br>Schreibe fünf Dinge auf, die heute ganz klein gut waren: ein Geruch, ein Blick, eine Tasse Tee.", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 20, "phase": "Phase 3: Wählen", "title": "Dein Beitrag zur Welt", "aha": "Wenn du in dir ruhiger wirst, wird auch die Welt um dich ein Stück ruhiger. Frieden ist ansteckend.", "neuro": "Deine Tagesaufgabe:<br>Was ist eine kleine Geste von dir, die heute jemandem guttun könnte? Tu sie und schreibe auf, wie es sich anfühlt.", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}, {"day": 21, "phase": "Phase 3: Wählen", "title": "Angekommen", "aha": "Du bist nicht an einem Ziel, sondern bei dir. Seelenfrieden ist keine Dauerzustand, sondern eine Heimat, zu der du immer zurückfindest.", "neuro": "Deine Tagesaufgabe:<br>Schreibe einen Brief an dich selbst in einem Jahr: Was hast du gelernt? Was möchtest du weiter pflegen?", "action": "Wenig Kraft heute? Die kleine Variante:<br>Drei ruhige Atemzüge, ein Glas Wasser, ein freundlicher Satz an dich.", "checkin": "Mini-Check-in:<br>• Innerer Lärm gerade: 0–10?<br>• Stimmung in einem Wort?<br>• Wie viel Frieden spürst du jetzt?"}], "en": [{"day": 1, "phase": "Phase 1: Recognize", "title": "Arriving in the Noise", "aha": "The world has gotten loud. Today you simply listen: how loud is it inside you, really?", "neuro": "Your task for today:<br>Sit for 5 minutes and write down everything your mind is chattering about right now. Unfiltered.", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 2, "phase": "Phase 1: Recognize", "title": "The World in Your Head", "aha": "You never experience the world itself – only the picture your thinking paints of it. Change the picture, and your world changes.", "neuro": "Your task for today:<br>Think of something weighing on you. Write two sentences: What happened? And: What did I tell myself about it?", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 3, "phase": "Phase 1: Recognize", "title": "Thoughts About Thoughts", "aha": "You can watch your own thoughts. That very fact – that you can – is the boundless gift these 21 days are about.", "neuro": "Your task for today:<br>Three times today, watch a thought and say silently: \"Ah, a thought.\" Note which one it was.", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 4, "phase": "Phase 1: Recognize", "title": "The Constant Hum", "aha": "News, notifications, opinions, comparisons: your mind takes in more each day than it can digest.", "neuro": "Your task for today:<br>Write down which three sources bring you the most unrest today. And which one you could pause for 24 hours.", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 5, "phase": "Phase 1: Recognize", "title": "Comparison Costs Peace", "aha": "You compare your inside with other people's outside. That is a race nobody wins.", "neuro": "Your task for today:<br>Write down who you often compare yourself with – and what you are really longing for underneath.", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 6, "phase": "Phase 1: Recognize", "title": "The Body Knows First", "aha": "Before you think anything, your body has already responded. It is your most honest early-warning system.", "neuro": "Your task for today:<br>Check in with your body three times today: where is the tension? Breathe there and write one word.", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 7, "phase": "Phase 1: Recognize", "title": "What Really Matters", "aha": "At the end of week one you may sort: what truly belongs to your life – and what have you only been carrying?", "neuro": "Your task for today:<br>Write three things that truly matter to you, and one you would like to let go of.", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 8, "phase": "Phase 2: Accept", "title": "You Are Not Your Thought", "aha": "\"I am worthless\" is a thought, not a verdict on you. Thoughts come and go like clouds – you are the sky.", "neuro": "Your task for today:<br>Write down a tormenting thought and put in front of it: \"I am having the thought that …\" How does that feel?", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 9, "phase": "Phase 2: Accept", "title": "Old Stories", "aha": "Many sentences inside you are old – from earlier, from others. You carry them like a backpack you never packed.", "neuro": "Your task for today:<br>Which old sentence do you believe about yourself? Who might it come from? Would you say it to a child?", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 10, "phase": "Phase 2: Accept", "title": "Peace with the Unchangeable", "aha": "A large part of your unrest comes from fighting what already is.", "neuro": "Your task for today:<br>Split a page into two columns: \"I can change\" and \"I cannot change\". Put everything on your mind into them.", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 11, "phase": "Phase 2: Accept", "title": "Forgiving Without Forgetting", "aha": "Resentment is poison you drink hoping someone else gets sick. Forgiving is a gift to yourself.", "neuro": "Your task for today:<br>Write a letter you will never send – to someone with whom something is still open. Or to yourself.", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 12, "phase": "Phase 2: Accept", "title": "Your Inner Friend", "aha": "How do you speak to yourself when you slip up? Today you become your own friend.", "neuro": "Your task for today:<br>Recall a mistake. Write what you would say to a good friend about it – and read it aloud to yourself.", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 13, "phase": "Phase 2: Accept", "title": "The Art of Doing Nothing", "aha": "You are not a project to be optimised. Pauses are not lost time, they are a homecoming.", "neuro": "Your task for today:<br>Plan 15 minutes today with no phone and no goal. Sit by a window. Afterwards write what surfaced.", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 14, "phase": "Phase 2: Accept", "title": "Closeness and Loneliness", "aha": "You can be lonely in a crowd – and fully connected alone. Connection begins with you.", "neuro": "Your task for today:<br>Who would you like to send an honest, warm message today? Write it – and send it if it feels right.", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 15, "phase": "Phase 3: Choose", "title": "The Gift of Choice", "aha": "You cannot control which thoughts arrive – but you can choose which one you follow.", "neuro": "Your task for today:<br>Take a burdensome thought and rephrase it into a sentence that stays true but gives you more room.", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 16, "phase": "Phase 3: Choose", "title": "Sowing New Thoughts", "aha": "Your mind is a garden. What you water daily grows. This holds for worries and for trust.", "neuro": "Your task for today:<br>Choose one sentence to read daily over the next days. Write it on a note and put it where you can see it.", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 17, "phase": "Phase 3: Choose", "title": "Boundaries as Love", "aha": "A clear no is often the most honest yes to yourself. Boundaries protect your peace and your relationships.", "neuro": "Your task for today:<br>Where do you say yes and mean no? Write down one situation and phrase a kind, clear no.", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 18, "phase": "Phase 3: Choose", "title": "Digital Silence", "aha": "Your phone is a wonderful tool and a poor master. Today you take back some silence.", "neuro": "Your task for today:<br>Put your phone away for two hours. Write what you noticed when the urge to reach for it came.", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 19, "phase": "Phase 3: Choose", "title": "Gratitude as a Muscle", "aha": "Gratitude does not deny the heavy. It simply turns your gaze toward what also holds you.", "neuro": "Your task for today:<br>Write five tiny good things from today: a scent, a glance, a cup of tea.", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 20, "phase": "Phase 3: Choose", "title": "Your Gift to the World", "aha": "As you grow calmer within, the world around you grows a little calmer too. Peace is contagious.", "neuro": "Your task for today:<br>What small gesture of yours could do someone good today? Do it and write down how it feels.", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}, {"day": 21, "phase": "Phase 3: Choose", "title": "Arrived", "aha": "You haven't reached a destination, you have reached yourself. Inner peace is not a permanent state but a home you can always return to.", "neuro": "Your task for today:<br>Write a letter to yourself one year from now: what did you learn? What do you want to keep nurturing?", "action": "Low on energy? The small version:<br>Three slow breaths, a glass of water, one kind sentence to yourself.", "checkin": "Mini check-in:<br>• Inner noise right now: 0–10?<br>• Mood in one word?<br>• How much peace do you feel now?"}]},extra:{"de": {"1": ["Du musst heute nichts lösen. Du darfst nur bemerken, wie müde das Dauerrauschen dich gemacht hat.", "Benennen beruhigt: Gefühle in Worte zu fassen dämpft nachweislich die Alarmzentren im Gehirn („Affect Labeling“).", "Ich darf langsamer werden."], "2": ["Zwischen dem, was geschieht, und dem, was du daraus machst, liegt ein kleiner Raum. Dort wohnt deine Freiheit.", "Benennen beruhigt: Gefühle in Worte zu fassen dämpft nachweislich die Alarmzentren im Gehirn („Affect Labeling“).", "Zwischen Ereignis und Deutung ist Raum."], "3": ["Wer seine Gedanken sehen kann, ist nicht mehr nur in ihnen gefangen. Du bist die, der oder das, was zuschaut.", "Benennen beruhigt: Gefühle in Worte zu fassen dämpft nachweislich die Alarmzentren im Gehirn („Affect Labeling“).", "Ich bin der Beobachter meiner Gedanken."], "4": ["Informiert sein und überflutet sein sind zwei verschiedene Dinge. Du darfst wählen, was bei dir ankommt.", "Benennen beruhigt: Gefühle in Worte zu fassen dämpft nachweislich die Alarmzentren im Gehirn („Affect Labeling“).", "Nicht alles, was laut ist, ist wichtig."], "5": ["Neid ist oft ein Wegweiser: Er zeigt dir, was dir fehlt, nicht, was dir zusteht. Folge ihm freundlich.", "Benennen beruhigt: Gefühle in Worte zu fassen dämpft nachweislich die Alarmzentren im Gehirn („Affect Labeling“).", "Mein Weg ist mein eigener."], "6": ["Frieden beginnt oft nicht im Kopf, sondern im Atem. Ein langer Ausatem sagt deinem Nervensystem: Es ist sicher.", "Benennen beruhigt: Gefühle in Worte zu fassen dämpft nachweislich die Alarmzentren im Gehirn („Affect Labeling“).", "Mein Atem bringt mich nach Hause."], "7": ["Du hast sieben Tage hingeschaut. Das war mutig. Nichts davon war umsonst.", "Benennen beruhigt: Gefühle in Worte zu fassen dämpft nachweislich die Alarmzentren im Gehirn („Affect Labeling“).", "Ich weiß, was mir wichtig ist."], "8": ["Ein Gedanke wird leichter, sobald du ihn als Gedanken erkennst. Er verliert seine Macht, nicht seinen Platz.", "Achtsamkeit wirkt: Schon wenige Wochen regelmäßiger Übung können Grübeln und Stress spürbar senken.", "Ich bin weiter als meine Gedanken."], "9": ["Du darfst eine Geschichte neu erzählen, sobald du merkst, dass sie nur eine Version war.", "Achtsamkeit wirkt: Schon wenige Wochen regelmäßiger Übung können Grübeln und Stress spürbar senken.", "Meine Geschichte darf sich weiterschreiben."], "10": ["Akzeptanz heißt nicht, es gutzuheißen. Es heißt, aufzuhören, Energie ins Unmögliche zu stecken.", "Achtsamkeit wirkt: Schon wenige Wochen regelmäßiger Übung können Grübeln und Stress spürbar senken.", "Ich lasse los, was nicht bei mir liegt."], "11": ["Vergeben heißt nicht, dass es okay war. Es heißt, dass du dich nicht länger daran festhalten lässt.", "Achtsamkeit wirkt: Schon wenige Wochen regelmäßiger Übung können Grübeln und Stress spürbar senken.", "Ich darf es ruhen lassen."], "12": ["Selbstmitgefühl macht nicht weich, es macht stabil. Wer freundlich zu sich ist, kommt schneller wieder auf die Beine.", "Achtsamkeit wirkt: Schon wenige Wochen regelmäßiger Übung können Grübeln und Stress spürbar senken.", "Ich bin mir ein guter Freund."], "13": ["Im Nichtstun hört man, was unter dem Tun liegt. Oft ist es sehr leise und sehr freundlich.", "Achtsamkeit wirkt: Schon wenige Wochen regelmäßiger Übung können Grübeln und Stress spürbar senken.", "Ich darf einfach sein."], "14": ["Ein einziger echter Kontakt wiegt mehr als hundert Likes. Du darfst den ersten Schritt machen.", "Achtsamkeit wirkt: Schon wenige Wochen regelmäßiger Übung können Grübeln und Stress spürbar senken.", "Ich darf mich zeigen und verbinden."], "15": ["Das ist die Gabe: dass dein Geist sich selbst umlenken kann. Das ist keine Schönfärberei, das ist Freiheit.", "Das Gehirn bleibt formbar (Neuroplastizität): Was du oft denkst, wird vertrauter und leichter.", "Ich wähle, wem ich folge."], "16": ["Wiederholung formt Bahnen im Gehirn. Aus einem Trampelpfad kann mit der Zeit ein Weg werden.", "Das Gehirn bleibt formbar (Neuroplastizität): Was du oft denkst, wird vertrauter und leichter.", "Ich gieße, was ich wachsen sehen will."], "17": ["Wer immer verfügbar ist, ist irgendwann für niemanden mehr da, auch nicht für sich.", "Das Gehirn bleibt formbar (Neuroplastizität): Was du oft denkst, wird vertrauter und leichter.", "Mein Nein schützt mein Ja."], "18": ["Langeweile ist der Boden, auf dem Kreativität und Ruhe wachsen. Du darfst sie wieder aushalten.", "Das Gehirn bleibt formbar (Neuroplastizität): Was du oft denkst, wird vertrauter und leichter.", "Ich bestimme, wann ich erreichbar bin."], "19": ["Was du bewusst wahrnimmst, nimmt in deinem Leben mehr Raum ein. Aufmerksamkeit ist deine Währung.", "Das Gehirn bleibt formbar (Neuroplastizität): Was du oft denkst, wird vertrauter und leichter.", "Ich sehe, was mich trägt."], "20": ["Die Welt ist, was du von ihr denkst – und was du ihr zurückgibst. Beides liegt in deiner Hand.", "Das Gehirn bleibt formbar (Neuroplastizität): Was du oft denkst, wird vertrauter und leichter.", "Mein Frieden wirkt weiter."], "21": ["Du kennst jetzt den Weg: hinschauen, annehmen, wählen. Er steht dir jederzeit offen.", "Das Gehirn bleibt formbar (Neuroplastizität): Was du oft denkst, wird vertrauter und leichter.", "Ich bin zu Hause in mir."]}, "en": {"1": ["You don't have to solve anything today. You only get to notice how tired the constant noise has made you.", "Naming calms: putting feelings into words measurably quiets the brain's alarm centres (\"affect labelling\").", "I am allowed to slow down."], "2": ["Between what happens and what you make of it lies a small space. That is where your freedom lives.", "Naming calms: putting feelings into words measurably quiets the brain's alarm centres (\"affect labelling\").", "Between event and meaning there is space."], "3": ["Whoever can see their thoughts is no longer only trapped inside them. You are the one who watches.", "Naming calms: putting feelings into words measurably quiets the brain's alarm centres (\"affect labelling\").", "I am the observer of my thoughts."], "4": ["Being informed and being flooded are two different things. You get to choose what reaches you.", "Naming calms: putting feelings into words measurably quiets the brain's alarm centres (\"affect labelling\").", "Not everything loud is important."], "5": ["Envy is often a signpost: it shows what you long for. Follow it kindly.", "Naming calms: putting feelings into words measurably quiets the brain's alarm centres (\"affect labelling\").", "My path is my own."], "6": ["Peace often starts in the breath, not the head. A long exhale tells your nervous system: you are safe.", "Naming calms: putting feelings into words measurably quiets the brain's alarm centres (\"affect labelling\").", "My breath brings me home."], "7": ["You looked closely for seven days. That took courage. None of it was in vain.", "Naming calms: putting feelings into words measurably quiets the brain's alarm centres (\"affect labelling\").", "I know what matters to me."], "8": ["A thought gets lighter once you recognise it as a thought. It loses its power, not its place.", "Mindfulness works: even a few weeks of regular practice can noticeably reduce rumination and stress.", "I am bigger than my thoughts."], "9": ["You may retell a story the moment you notice it was only one version.", "Mindfulness works: even a few weeks of regular practice can noticeably reduce rumination and stress.", "My story is allowed to keep being written."], "10": ["Acceptance doesn't mean approving. It means no longer pouring energy into the impossible.", "Mindfulness works: even a few weeks of regular practice can noticeably reduce rumination and stress.", "I let go of what is not mine to carry."], "11": ["Forgiving doesn't mean it was okay. It means you no longer let it hold you.", "Mindfulness works: even a few weeks of regular practice can noticeably reduce rumination and stress.", "I may let it rest."], "12": ["Self-compassion doesn't make you soft, it makes you steady. Kindness to yourself gets you back on your feet faster.", "Mindfulness works: even a few weeks of regular practice can noticeably reduce rumination and stress.", "I am a good friend to myself."], "13": ["In doing nothing you hear what lies beneath the doing. Often it is very quiet and very kind.", "Mindfulness works: even a few weeks of regular practice can noticeably reduce rumination and stress.", "I may simply be."], "14": ["One real contact outweighs a hundred likes. You are allowed to take the first step.", "Mindfulness works: even a few weeks of regular practice can noticeably reduce rumination and stress.", "I may show myself and connect."], "15": ["This is the gift: your mind can steer itself. That isn't sugar-coating, it's freedom.", "The brain stays shapeable (neuroplasticity): what you think often becomes familiar and easier.", "I choose which thought I follow."], "16": ["Repetition shapes pathways in the brain. A trodden track can become a road over time.", "The brain stays shapeable (neuroplasticity): what you think often becomes familiar and easier.", "I water what I want to see grow."], "17": ["Whoever is always available is eventually there for no one, not even themselves.", "The brain stays shapeable (neuroplasticity): what you think often becomes familiar and easier.", "My no protects my yes."], "18": ["Boredom is the soil in which creativity and calm grow. You may learn to bear it again.", "The brain stays shapeable (neuroplasticity): what you think often becomes familiar and easier.", "I decide when I am reachable."], "19": ["What you consciously notice takes up more room in your life. Attention is your currency.", "The brain stays shapeable (neuroplasticity): what you think often becomes familiar and easier.", "I see what carries me."], "20": ["The world is what you think of it – and what you give back to it. Both are in your hands.", "The brain stays shapeable (neuroplasticity): what you think often becomes familiar and easier.", "My peace ripples outward."], "21": ["You now know the way: look, accept, choose. It is open to you at any time.", "The brain stays shapeable (neuroplasticity): what you think often becomes familiar and easier.", "I am at home in myself."]}},chap:{"de": {"1": ["Erkennen", "Du hast hingeschaut, ohne etwas lösen zu müssen. Allein das war schon viel."], "8": ["Annehmen", "Du hast geübt, dich selbst und das Leben so zu nehmen, wie sie sind."], "15": ["Wählen", "Du hast dir erlaubt zu wählen: Gedanken, Grenzen, Richtung. Die Zügel liegen wieder bei dir."]}, "en": {"1": ["Recognize", "You looked closely without having to fix anything. That alone was a lot."], "8": ["Accept", "You practised taking yourself and life as they are."], "15": ["Choose", "You allowed yourself to choose: thoughts, boundaries, direction. The reins are yours again."]}}};
+const S18=[['.logo','☀ Seelenfrieden · Michaela Schäfer','☀ Inner Peace · Michaela Schäfer'],['.eyebrow','Die Welt in dir · von Michaela Schäfer','The World Within You · by Michaela Schäfer'],['.hero h1','Die Welt<br>in dir','The World<br>Within You'],['.author-sub','21 Tage zurück zu deinem Seelenfrieden','21 days back to your inner peace'],['.hero-text','Die Welt ist das, was du von der Welt denkst. Wenn du lernst, deine Gedanken über deine Gedanken zu sehen, wird aus Lärm Klarheit und aus Unruhe Frieden. Ein menschliches Tagebuch für heute.','The world is what you think of the world. When you learn to see your thoughts about your thoughts, noise becomes clarity and unrest becomes peace. A human journal for today.'],['.hero .primary','Jetzt starten&nbsp; →','Start now&nbsp; →'],['.hero-details','<span>☀ Mehr Seelenfrieden</span><span>☀ Mehr Klarheit</span><span>☀ Mehr Gelassenheit</span>','<span>☀ More inner peace</span><span>☀ More clarity</span><span>☀ More calm</span>'],['.book','<small>Seelenfrieden</small><b>Die Welt in dir</b><i>21 Tage zurück zu deinem Seelenfrieden</i><small style="margin-top:28px">Michaela Schäfer</small>','<small>Inner Peace</small><b>The World Within You</b><i>21 days back to your inner peace</i><small style="margin-top:28px">Michaela Schäfer</small>'],['.nav-button','Jetzt starten','Start now']];
+const NAVEN=['Welcome','The Journey','Feelings &amp; Knowledge','The Book','21 Days','About Michaela','Contact','Education'],NAVDE=['Willkommen','Die Reise','Gefühle &amp; Wissen','Das Buch','21 Tage','Über Michaela','Kontakt','Aufklärung'];
+function setLang(l){try{S.set('rz_lang',l)}catch(e){}document.documentElement.lang=l;
+ daysData.length=0;I18N.days[l].forEach(d=>daysData.push(d));Object.keys(EXTRA).forEach(k=>delete EXTRA[k]);Object.assign(EXTRA,I18N.extra[l]);Object.keys(CHAP).forEach(k=>delete CHAP[k]);Object.assign(CHAP,I18N.chap[l]);
+ S18.forEach(a=>{const e=document.querySelector(a[0]);if(e)e.innerHTML=a[l=='de'?1:2]});
+ document.querySelectorAll('header nav a').forEach((a,i)=>{const n=(l=='de'?NAVDE:NAVEN)[i];if(n)a.innerHTML=n});
+ document.title=l=='de'?'Die Welt in dir · 21 Tage zurück zu deinem Seelenfrieden | Michaela Schäfer':'The World Within You · 21 days back to your inner peace | Michaela Schäfer';
+ document.querySelectorAll('.lgb').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l==l));try{render()}catch(e){}}
+function lgHTML(){return '<span class="lg"><button class="lgb" data-l="de" onclick="setLang(\'de\')">DE</button><button class="lgb" data-l="en" onclick="setLang(\'en\')">EN</button></span>'}
+document.querySelector('header').insertAdjacentHTML('beforeend',lgHTML());document.querySelector('footer').insertAdjacentHTML('afterbegin','<span style="width:100%;text-align:center">'+lgHTML()+'</span>');
+setLang((function(){try{return S.get('rz_lang')||((navigator.language||'de').slice(0,2)=='en'?'en':'de')}catch(e){return 'de'}})());
+
+const TT='Dein Feed, dein Weltbild¦Your Feed, Your Worldview¦Welche drei Inhalte haben dich zuletzt aufgewühlt? Was haben sie in dir ausgelöst?¦Which three pieces of content stirred you up most recently? What did they trigger in you?\nBildschirmzeit: die Wahrheit¦Screen Time: The Truth¦Schätze deine tägliche Bildschirmzeit, dann schau nach. Was steckt hinter der Differenz?¦Guess your daily screen time, then check. What lies behind the gap?\nAufmerksamkeit als Ware¦Attention as Currency¦Wer verdient daran, dass du weiterscrollst? Was würdest du sonst mit der Zeit tun?¦Who profits when you keep scrolling? What would you do with that time instead?\nDauerstress ist normal geworden¦Constant Stress Became Normal¦Wo spürst du Stress zuerst im Körper? Seit wann ist er dein Begleiter?¦Where do you feel stress first in your body? Since when has it been your companion?\nErreichbar um jeden Preis¦Reachable at Any Price¦Wann hast du zuletzt wirklich abgeschaltet? Was hindert dich daran?¦When did you last truly switch off? What stops you?\nProduktiv als Lebensziel¦Productivity as Purpose¦Für wen oder was funktionierst du? Was würde passieren, wenn du es nicht tätest?¦Who or what are you functioning for? What would happen if you stopped?\nDie Stimme deiner Mutter¦Your Mother\'s Voice¦Welche Sätze deiner Mutter hörst du noch in dir? Welche tragen dich, welche belasten dich?¦Which of your mother\'s sentences do you still hear inside? Which carry you, which weigh on you?\nWas sie gab, was sie nicht konnte¦What She Gave, What She Couldn\'t¦Schreibe auf, was du bekommen hast und was fehlte – ohne Anklage, ohne Verklärung.¦Write what you received and what was missing – without blame, without idealising.\nMutter-Muster in deinem Leben¦Mother Patterns in Your Life¦Wo wiederholst du etwas von ihr? Was willst du behalten, was nicht?¦Where do you repeat something of hers? What do you want to keep, what not?\nDie Stimme deines Vaters¦Your Father\'s Voice¦Welche Erwartungen deines Vaters spürst du noch? Sind es deine eigenen?¦Which expectations of your father do you still feel? Are they your own?\nLeistung, Härte, Schweigen¦Achievement, Toughness, Silence¦Was hast du über Stärke gelernt? Wo kostet dich diese Stärke heute Frieden?¦What did you learn about strength? Where does that strength cost you peace today?\nDas Erbe der Familie¦The Family Inheritance¦Welche unausgesprochenen Regeln gelten in deiner Familie? Welche willst du brechen?¦Which unspoken rules govern your family? Which do you want to break?\nDer Vergleichsmarkt¦The Comparison Market¦Welchem Bild von Erfolg, Aussehen oder Glück jagst du nach? Wer hat es dir gezeigt?¦Which image of success, looks or happiness are you chasing? Who showed it to you?\nSoll, muss, darf¦Should, Must, May¦Schreibe fünf „Ich muss“-Sätze auf. Welche stammen von dir, welche von anderen?¦Write five "I must" sentences. Which are yours, which come from others?\nZugehörigkeit und ihr Preis¦Belonging and Its Price¦Wo passt du dich an, um dazuzugehören? Was kostet dich das?¦Where do you adapt to belong? What does it cost you?\nGeld und Gefühle¦Money and Feelings¦Welches Gefühl taucht bei Geld zuerst auf? Welchen Satz über Geld hast du geerbt?¦Which feeling appears first around money? Which sentence about money did you inherit?\nSicherheit oder Angst?¦Security or Fear?¦Wie viel Druck machen dir Finanzen? Was wäre für dich konkret genug?¦How much pressure do finances put on you? What would be concretely enough?\nDein Wert ist kein Kontostand¦Your Worth Is Not a Balance¦Wo verwechselst du Besitz, Status oder Einkommen mit deinem Wert?¦Where do you confuse possessions, status or income with your worth?\nWer wärst du ohne Druck?¦Who Would You Be Without Pressure?¦Beschreibe einen Tag ohne fremde Erwartungen. Was ist anders?¦Describe a day without anyone\'s expectations. What is different?\nDie Gabe der Wahl¦The Gift of Choice¦Welche drei Gedanken wählst du ab heute bewusst? Welche lässt du ziehen?¦Which three thoughts will you consciously choose from today? Which will you let go?\nDein Gedankenspiegel¦Your Mirror of Mind¦Lies deine Einträge. Welcher rote Faden zieht sich durch? Dann öffne deine Analyse.¦Read your entries. What common thread runs through them? Then open your analysis.'.split('\n').map(r=>r.split('¦')),CA="Digitale Medien¦Digital media¦Digitale Medien sind darauf gebaut, dich zu halten, nicht dich zu nähren. Dein Feed formt, was du für normal, wichtig und bedrohlich hältst.¦Digital media is built to keep you, not to nourish you. Your feed shapes what you consider normal, important and threatening.¦Viel Social-Media-Nutzung hängt mit mehr Vergleichen, Schlafproblemen und Grübeln zusammen – der Zusammenhang ist komplex, aber spürbar.¦Heavy social media use is linked to more comparison, sleep problems and rumination – the link is complex, but noticeable.¦Ich entscheide, was in meinen Kopf darf.¦I decide what enters my mind.\nStress & Tempo¦Stress & pace¦Erschöpfung gilt als Beweis von Wert. Dein Nervensystem unterscheidet aber nicht zwischen echter Gefahr und Dauerbenachrichtigung.¦Exhaustion is treated as proof of worth. Your nervous system, however, cannot tell real danger from constant notifications.¦Chronischer Stress hält den Körper in Alarmbereitschaft; lange Ausatmung und Pausen aktivieren nachweislich die Beruhigung.¦Chronic stress keeps the body on alert; long exhales and pauses measurably activate calming.¦Mein Wert liegt nicht in meinem Tempo.¦My worth is not in my pace.\nMutter¦Mother¦Die Stimme der Mutter wird oft zur inneren Stimme. Sie ist selten nur gut oder nur schlecht – und sie darf von dir geprüft werden.¦A mother's voice often becomes the inner voice. It is rarely only good or only bad – and you may examine it.¦Frühe Bindungserfahrungen prägen innere Muster. Muster sind veränderbar, auch im Erwachsenenalter.¦Early attachment shapes inner patterns. Patterns can change, even in adulthood.¦Ich darf behalten, was trägt, und ablegen, was drückt.¦I may keep what carries me and set down what weighs.\nVater¦Father¦Väter geben oft Härte, Leistung oder Schweigen weiter – selten aus Bosheit, meist weil sie es selbst so lernten. Du darfst es prüfen.¦Fathers often pass on toughness, achievement or silence – rarely from malice, mostly because they learned it that way. You may examine it.¦Unausgesprochene Familienregeln wirken oft über Generationen, bis jemand sie bemerkt und benennt.¦Unspoken family rules often run for generations until someone notices and names them.¦Ich bin mehr als die Erwartungen an mich.¦I am more than the expectations placed on me.\nGesellschaft¦Society¦Wir leben im permanenten Vergleich. Die Maßstäbe sind selten deine eigenen, aber du zahlst den Preis dafür.¦We live in permanent comparison. The standards are rarely your own, but you pay the price.¦Sozialer Vergleich ist normal, wird aber durch Plattformen verstärkt – nach oben verglichen sinkt oft die Zufriedenheit.¦Social comparison is natural but amplified by platforms – comparing upward often lowers satisfaction.¦Ich prüfe, bevor ich mich anpasse.¦I examine before I conform.\nFinanzen¦Finances¦Geldsorgen sind reale Sorgen und zugleich Geschichten. Beides verdient Klarheit statt Scham.¦Money worries are real worries and also stories. Both deserve clarity rather than shame.¦Finanzieller Druck belastet Aufmerksamkeit und Schlaf; konkrete Zahlen und kleine Schritte senken die Angst oft mehr als Vermeiden.¦Financial strain burdens attention and sleep; concrete numbers and small steps often reduce fear more than avoidance.¦Mein Wert ist nicht mein Kontostand.¦My worth is not my balance.\nFreiheit¦Freedom¦Freiheit beginnt, wenn du erkennst, welche Gedanken geliehen sind. Du kannst wählen, welchem du folgst.¦Freedom begins when you see which thoughts are borrowed. You can choose which one to follow.¦Das Gehirn bleibt ein Leben lang formbar: Was du bewusst wiederholst, wird vertrauter.¦The brain stays shapeable for life: what you consciously repeat becomes familiar.¦Ich wähle meine Gedanken.¦I choose my thoughts.".split('\n').map(r=>r.split('¦'));
+(function(){
+const cat=v=>Math.floor((v-1)/3),L=()=>document.documentElement.lang=='en'?1:0,T=(a,b)=>L()?b:a,g=k=>S.get(k)||'';
+['de','en'].forEach((l,o)=>I18N.days[l].forEach((d,i)=>{const c=CA[cat(i+1)],r=TT[i];d.title=r[o];d.neuro=(o?'Your task for today:<br>':'Deine Tagesaufgabe:<br>')+r[2+o];d.phase=(o?'Topic: ':'Thema: ')+c[o];d.aha=c[2+o];I18N.extra[l][i+1]=[(o?'Day ':'Tag ')+(i%3+1)+'/3 · '+c[o],c[4+o],c[6+o]]}));
+const h=S18.find(a=>a[0]=='.hero-text');h[1]='Digitale Medien, Dauerstress, Mutter, Vater, Gesellschaft, Geld: Was davon denkt in dir – und was denkst wirklich du? 21 Tage klare Analyse, Schreiben wie ein Autor und am Ende dein persönlicher Gedankenspiegel.';h[2]='Digital media, constant stress, mother, father, society, money: which of it thinks inside you – and what do you really think? 21 days of clear analysis, writing like an author, and at the end your personal mirror of mind.';
+const _r=render;render=function(){_r.apply(this,arguments);studio()};
+function studio(){const v=+S.get('rz_view')||1,d=document.getElementById('days');if(!d)return;const o=d.querySelector('.studio');if(o)o.remove();const sc=g('rz_sc_'+v)||5,wc=x=>(x.trim().match(/\S+/g)||[]).length;
+d.insertAdjacentHTML('beforeend',`<div class="studio"><h3>${T('Dein Autorenstudio','Your Writer\u2019s Studio')} <small>${CA[cat(v)][L()]}</small></h3>
+<label>${T('Mein Thema heute','My topic today')}<input value="${esc(g('rz_th_'+v))}" oninput="stS('th',${v},this.value)" placeholder="${T('Ein Titel für deinen Tag …','A title for your day …')}"></label>
+<label>${T('Gedanken über meine Gedanken','Thoughts about my thoughts')}<textarea rows="7" oninput="stS('mt',${v},this.value)" placeholder="${T('Was denke ich – und was denke ich darüber, dass ich das denke?','What do I think – and what do I think about thinking that?')}">${esc(g('rz_mt_'+v))}</textarea></label>
+<label>${T('Wo stehe ich? Druck bei diesem Thema','Where am I? Pressure on this topic')}: <b id="stV">${sc}</b>/10<input type="range" min="0" max="10" value="${sc}" oninput="stS('sc',${v},this.value);stV.textContent=this.value"></label>
+<div class="stb"><button class="btn o" onclick="openAna()">${T('Zwischenanalyse','Interim analysis')}</button>${v==21?`<button class="btn" onclick="openAna()">✦ ${T('Meine persönliche Analyse','My personal analysis')}</button>`:''}</div></div>`)}
+window.stS=(k,v,x)=>S.set('rz_'+k+'_'+v,x);
+window.openAna=function(){const sc=CATS(),W=[];let txt='',days=0;for(let v=1;v<=21;v++){const t=g('rz_note_'+v)+' '+g('rz_th_'+v)+' '+g('rz_mt_'+v);if(t.trim().length>2)days++;txt+=' '+t;const x=g('rz_sc_'+v);if(x!=='')sc[cat(v)].push(+x)}
+const av=sc.map(a=>a.length?a.reduce((x,y)=>x+y)/a.length:null),w=txt.toLowerCase().match(/[a-zäöüß]+/g)||[],n=w.length,
+P=/^(muss|müssen|musst|soll|sollte|sollen|versagen|schuld|angst|sorge|sorgen|stress|druck|pflicht|erschöpft|überfordert|must|should|fail|failure|guilt|afraid|fear|worry|pressure|exhausted|overwhelmed)$/,A=/^(darf|dürfen|will|möchte|wähle|genug|frei|freiheit|ruhig|ruhe|dankbar|liebe|vertrauen|frieden|may|want|choose|enough|free|freedom|calm|grateful|love|trust|peace)$/,B=/^(immer|nie|niemals|alle|alles|nichts|keiner|jeder|always|never|everyone|everything|nothing|nobody)$/,
+cp=w.filter(x=>P.test(x)).length,ca=w.filter(x=>A.test(x)).length,cb=w.filter(x=>B.test(x)).length,f={};
+const SW=/^(und|oder|aber|dass|nicht|auch|dann|dort|doch|wenn|weil|sich|mich|dich|mein|dein|eine|einen|einem|einer|wird|wurde|habe|haben|bin|sind|war|ist|the|and|that|with|have|this|from|they|what|your|about|were|been|would|there|their)$/;
+w.forEach(x=>{if(x.length>4&&!SW.test(x))f[x]=(f[x]||0)+1});const top=Object.entries(f).sort((a,b)=>b[1]-a[1]).slice(0,6).filter(e=>e[1]>1).map(e=>e[0]);
+const ok=av.map((a,i)=>[a,i]).filter(e=>e[0]!==null).sort((a,b)=>b[0]-a[0]),hi=ok[0],lo=ok[ok.length-1],ton=cp+ca?cp/(cp+ca):null;
+const X=(i,r)=>150+r*Math.cos(i*Math.PI*2/7-Math.PI/2),Y=(i,r)=>140+r*Math.sin(i*Math.PI*2/7-Math.PI/2);
+const svg=`<svg viewBox="0 0 300 290" class="rad">${[.33,.66,1].map(q=>`<polygon fill="none" stroke="currentColor" opacity=".18" points="${[...Array(7)].map((_,i)=>X(i,95*q)+','+Y(i,95*q)).join(' ')}"/>`).join('')}<polygon fill="rgba(216,178,110,.28)" stroke="#d8b26e" stroke-width="2" points="${av.map((a,i)=>X(i,95*(a||0)/10)+','+Y(i,95*(a||0)/10)).join(' ')}"/>${CATS().map((_,i)=>`<text x="${X(i,115)}" y="${Y(i,115)}" font-size="9.5" text-anchor="middle" fill="currentColor">${CA[i][L()]}</text>`).join('')}</svg>`;
+const li=(a,b)=>`<p>${T(a,b)}</p>`;let r='';
+if(hi)r+=li(`<b>Dein größter Druckpunkt:</b> ${CA[hi[1]][0]} (Ø ${hi[0].toFixed(1)}/10). ${CA[hi[1]][2]}`,`<b>Your biggest pressure point:</b> ${CA[hi[1]][1]} (avg ${hi[0].toFixed(1)}/10). ${CA[hi[1]][3]}`);
+if(lo&&lo[1]!=hi[1])r+=li(`<b>Deine Ressource:</b> ${CA[lo[1]][0]} (Ø ${lo[0].toFixed(1)}/10) – hier trägt dich schon etwas. Nimm es als Beweis, dass Veränderung möglich ist.`,`<b>Your resource:</b> ${CA[lo[1]][1]} (avg ${lo[0].toFixed(1)}/10) – something already carries you here. Take it as proof that change is possible.`);
+if(ton!==null)r+=li(`<b>Dein innerer Ton:</b> ${Math.round(ton*100)} % Druck-Worte (muss, soll, Angst …) gegenüber ${100-Math.round(ton*100)} % Erlaubnis-Worten (darf, frei, genug …). ${ton>.6?'Du sprichst mit dir wie ein strenger Vorgesetzter. Probiere, „muss“ durch „möchte“ zu ersetzen.':ton>.4?'Dein Ton ist gemischt: Druck und Erlaubnis halten sich die Waage.':'Du sprichst überwiegend freundlich und erlaubend mit dir.'}`,`<b>Your inner tone:</b> ${Math.round(ton*100)} % pressure words (must, should, fear …) versus ${100-Math.round(ton*100)} % permission words (may, free, enough …). ${ton>.6?'You speak to yourself like a strict boss. Try swapping "must" for "want to".':ton>.4?'Your tone is mixed: pressure and permission balance out.':'You mostly speak to yourself kindly and with permission.'}`);
+if(n>20)r+=li(`<b>Schwarz-Weiß-Denken:</b> ${cb} Absolutismen (immer, nie, alle …) in ${n} Wörtern. ${cb/n>.012?'Das deutet auf starre Gedankenschienen hin. Frage dich bei jedem „immer“: wirklich immer?':'Du bleibst überwiegend differenziert – ein gutes Zeichen für innere Beweglichkeit.'}`,`<b>Black-and-white thinking:</b> ${cb} absolutes (always, never, everyone …) in ${n} words. ${cb/n>.012?'This hints at rigid thought tracks. Ask yourself at every "always": really always?':'You stay mostly nuanced – a good sign of inner flexibility.'}`);
+if(top.length)r+=li(`<b>Deine Leitworte:</b> ${top.join(', ')}.`,`<b>Your key words:</b> ${top.join(', ')}.`);
+r+=li(`<b>Dein Schreiben:</b> ${days} von 21 Tagen, etwa ${n} Wörter.${n<60?' Je mehr du schreibst, desto genauer wird dein Spiegel.':''}`,`<b>Your writing:</b> ${days} of 21 days, about ${n} words.${n<60?' The more you write, the sharper your mirror.':''}`);
+if(hi)r+=`<blockquote class="serif">${CA[hi[1]][6+L()]}</blockquote>`;
+document.getElementById('anaB').innerHTML=svg+r;document.querySelector('#ana .lt').textContent=T('Dein Gedankenspiegel','Your Mirror of Mind');document.getElementById('ana').classList.add('on')};
+function CATS(){return [[],[],[],[],[],[],[]]}
+document.body.insertAdjacentHTML('beforeend',`<div class="ov" id="ana"><div class="box"><h2 class="serif">✦ <span class="lt">Dein Gedankenspiegel</span></h2><div id="anaB"></div><p class="hint" style="margin-top:14px">Diese Auswertung ist ein Spiegel deiner eigenen Worte und Werte – keine medizinische oder psychologische Diagnose. Wenn dich etwas stark belastet: Telefonseelsorge 0800 111 0 111, Notfall 112. · This analysis mirrors your own words and ratings – it is not a medical or psychological diagnosis. If something weighs heavily on you, please seek professional support.</p><button class="btn" onclick="window.print()">PDF / Print</button> <button class="btn o" onclick="closeM()">OK</button></div></div>`);
+
+setLang(document.documentElement.lang);
+})();
+
+(function(){
+const L=()=>document.documentElement.lang=='en'?1:0,T=(a,b)=>L()?b:a,sea=document.getElementById('sea');
+window.sunBurst=()=>{sea.classList.remove('flash');void sea.offsetWidth;sea.classList.add('flash')};
+const sunSet=()=>{try{sea.style.setProperty('--p',((+S.get('rz_view')||1)/21).toFixed(2))}catch(e){}};
+setTimeout(sunSet,400);
+/* Sprache -> Text */
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition;let rec=null,cur=null,want=false;
+function stopRec(){want=false;if(rec){try{rec.stop()}catch(e){}}document.querySelectorAll('.mic.rec').forEach(b=>{b.classList.remove('rec');b.textContent=T('🎙 Sprechen','🎙 Speak')})}
+function dictate(el,b){
+ if(!SR){alert(T('Spracheingabe wird von diesem Browser nicht unterstützt. Bitte nutze Chrome, Edge oder Safari – oder das Mikrofon deiner Handy-Tastatur.','Voice input is not supported by this browser. Please use Chrome, Edge or Safari – or your phone keyboard\u2019s microphone.'));return}
+ if(cur===el&&want){stopRec();return}stopRec();
+ if(!S.get('rz_micok')){if(!confirm(T('Hinweis: Die Spracherkennung wird vom Dienst deines Browsers (z. B. Google oder Apple) ausgeführt, dein Ton wird dafür dorthin übertragen. Dein Tagebuch selbst bleibt nur auf deinem Gerät. Fortfahren?','Note: speech recognition is performed by your browser\u2019s service (e.g. Google or Apple); your audio is sent there for that. Your journal itself stays only on your device. Continue?')))return;S.set('rz_micok','1')}
+ cur=el;want=true;b.classList.add('rec');b.textContent=T('⏹ Aufnahme beenden','⏹ Stop recording');
+ const go=()=>{rec=new SR();rec.lang=L()?'en-US':'de-DE';rec.continuous=true;rec.interimResults=true;const base=el.value;let fin='';
+  rec.onresult=e=>{let it='';for(let i=e.resultIndex;i<e.results.length;i++){const r=e.results[i];if(r.isFinal)fin+=r[0].transcript.trim()+' ';else it+=r[0].transcript}el.value=(base+(base&&!/\s$/.test(base)?' ':'')+fin+it).replace(/\s+$/,'');el.dispatchEvent(new Event('input',{bubbles:true}))};
+  rec.onerror=e=>{if(e.error=='not-allowed'||e.error=='service-not-allowed'){want=false;alert(T('Der Zugriff auf das Mikrofon ist blockiert. Bitte erlaube ihn in den Browser-Einstellungen (und öffne die Seite über https).','Microphone access is blocked. Please allow it in your browser settings (and open the page via https).'))}};
+  rec.onend=()=>{if(want&&document.body.contains(el))go();else stopRec()};try{rec.start()}catch(e){stopRec()}};go()}
+function mics(){document.querySelectorAll('#days textarea,#days .studio input:not([type=range])').forEach(el=>{if(el.nextElementSibling&&el.nextElementSibling.classList.contains('mic'))return;el.insertAdjacentHTML('afterend','<button type="button" class="mic">'+T('🎙 Sprechen','🎙 Speak')+'</button>');const b=el.nextElementSibling;b.onclick=e=>{e.preventDefault();dictate(el,b)}})}
+const _r=render;render=function(){stopRec();_r.apply(this,arguments);mics();sunSet()};
+/* ruhige Musik (Web Audio, ohne Datei) */
+let ac,mg,tm,pl=false,k=0;const N=m=>440*Math.pow(2,(m-69)/12),CH=[[57,64,67,71,76],[53,60,64,69,72],[48,55,64,67,74],[55,62,67,71,74]];
+function init(){ac=new(window.AudioContext||window.webkitAudioContext)();mg=ac.createGain();mg.gain.value=0;const l=ac.sampleRate*3,bf=ac.createBuffer(2,l,ac.sampleRate);for(let c=0;c<2;c++){const d=bf.getChannelData(c);for(let i=0;i<l;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/l,2.6)}const rv=ac.createConvolver();rv.buffer=bf;const dr=ac.createGain();dr.gain.value=.45;mg.connect(dr);dr.connect(ac.destination);mg.connect(rv);rv.connect(ac.destination)}
+function vo(f,t,d,v){const o=ac.createOscillator(),g=ac.createGain();o.frequency.value=f;o.detune.value=(Math.random()-.5)*8;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v,t+d*.4);g.gain.linearRampToValueAtTime(0,t+d);o.connect(g);g.connect(mg);o.start(t);o.stop(t+d+.1)}
+function bar(){const t=ac.currentTime+.1,c=CH[k++%4];c.forEach((m,i)=>vo(N(i?m:m-12),t+i*.35,10,.05));if(Math.random()<.8)vo(N(c[(Math.random()*c.length)|0]+12),t+2+Math.random()*4,5,.03)}
+function play(){if(!ac)init();ac.resume();mg.gain.cancelScheduledValues(ac.currentTime);mg.gain.linearRampToValueAtTime(.9,ac.currentTime+5);clearInterval(tm);bar();tm=setInterval(bar,8000);pl=true;ui()}
+function stop(){if(!ac)return;pl=false;mg.gain.cancelScheduledValues(ac.currentTime);mg.gain.linearRampToValueAtTime(0,ac.currentTime+1.5);clearInterval(tm);setTimeout(()=>{if(!pl)ac.suspend()},1800);ui()}
+document.body.insertAdjacentHTML('beforeend','<button id="snd" class="snd" type="button"></button>');const sb=document.getElementById('snd');let ht;
+function ui(){sb.textContent=pl?T('♪ Musik aus','♪ Music off'):T('♪ Musik an','♪ Music on');sb.setAttribute('aria-label',sb.textContent);wake()}
+function wake(){sb.classList.remove('gone');clearTimeout(ht);ht=setTimeout(()=>sb.classList.add('gone'),4000)}
+sb.onclick=()=>{try{S.set('rz_snd',pl?'0':'1')}catch(e){}pl?stop():play()};
+['pointermove','pointerdown','keydown','touchstart'].forEach(e=>addEventListener(e,wake,{passive:true}));
+const first=e=>{if(e.target.closest&&e.target.closest('#snd'))return;let o;try{o=S.get('rz_snd')}catch(x){}if(o!=='0'&&!pl)play()};['pointerdown','keydown'].forEach(e=>addEventListener(e,first,{once:true}));
+addEventListener('keydown',e=>{if(e.key.toLowerCase()=='m'&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)&&!e.ctrlKey&&!e.metaKey)sb.click()});
+document.addEventListener('visibilitychange',()=>{if(!ac||!pl)return;document.hidden?ac.suspend():ac.resume()});
+ui();render();
+})();
+</script>
+
+
+
+</body>
+</html>
